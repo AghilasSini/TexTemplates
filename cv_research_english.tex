@@ -1,0 +1,288 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Auteur : Aghilas Sini %
+% Créé le : 18/06/2013    %
+% Version : 1.8             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Commandes pour la compilation	%
+% latex cv.tex                 	%
+% dvips -Ppdf -t a4 cv.dvi     	%
+% ps2pdf cv.ps                 	%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper,oneside]{resume}
+
+
+\usepackage[english]{babel} 
+\usepackage[latin1]{inputenc}  % les accents dans le fichier.tex
+
+\usepackage{vmargin} %left, top, right, bottom
+\usepackage{graphicx} % Pour insérer des images
+\usepackage{wrapfig} % Pour placer les images
+
+\setmarginsrb{1.2cm}{1.0cm}{1.0cm}{1.2cm}{0cm}{0cm}{0cm}{0cm}
+
+\usepackage{relsize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Définition de quelques macros    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% ligne horizontale sur toute la page. Usage : \ligne{Largeur}
+\newcommand{\ligne}[1]{\rule[0.5ex]{\textwidth}{#1}\\}
+\newcommand{\interRubrique}{\bigskip}
+\newcommand{\styleRub}[1]{\noindent\textbf{\large #1}\par}
+\newcommand{\indentStd}{\noindent\hspace{\lenA}}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Commandes Personnalisées    	  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Personnalisation du titre avec un cadre grisé.
+\newcommand{\mytitle}[1]{
+    \begin{center}
+    {\large \parashade[.9]{sharpcorners}{\textbf{#1 \vphantom{p\^{E}}}}}
+    \end{center}
+}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% L'environnement "rubrique" 
+%
+% Usage : \begin{rubrique}[Ind3.4entation]{Titre} [...] \end{rubrique}
+% Ensuite, la première colonne contient par exemple les dates, la seconde
+% le descriptif.
+% Par exemple :
+%
+% \begin{rubrique}{3.5cm}{pipotage}
+% 1999--2000 	& ligne 1\\
+% 		& ligne 2\\
+% 1998--1999	& ligne 1\\
+% [etc...]
+% \end{rubrique}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newenvironment{rubrique}[2][\linewidth] {
+    \styleRub{#2}
+    \setlength{\lenB}{#1}
+    \setlength{\lenC}{\linewidth}
+    \addtolength{\lenC}{-\lenA}
+    \addtolength{\lenC}{-\lenB}
+    \addtolength{\lenC}{-\parindent}
+    \addtolength{\lenC}{-9pt}
+    \indentStd\begin{tabular}[t]{p{\lenB}p{\lenC}}
+}
+{\end{tabular}}
+
+\newenvironment{header}[2][\linewidth] {
+    \styleRub{#2}
+    \setlength{\lenB}{#1}
+    \setlength{\lenC}{\linewidth}
+    \addtolength{\lenC}{-\lenA}
+    \addtolength{\lenC}{-\lenB}
+    \addtolength{\lenC}{-\parindent}
+    \addtolength{\lenC}{-9pt}
+    \indentStd\begin{tabular}[t]{p{\lenB}ll}
+}
+{\end{tabular}}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Commandes utilisables dans le descriptif %
+%					   %
+% Modifiables à loisir... 		   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\lieu}[1]{\small{\textsl{#1}\ }}
+\newcommand{\activite}[1]{\textbf{#1}\ }
+\newcommand{\comment}[1]{\textsl{#1}\ }
+\newcommand*\bull{\ \ \raisebox{-0.365em}[-0.15em][-0.15em]{\textscale{4}{$\cdot$}} \ } % Custom bullet point for separating content
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Début du CV proprement dit (ouf ! :) ) %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\name{Aghilas SINI} % Your name
+\address{615 Rue du Jardin Botanique \\ Villers les Nancy , 54600 France (professionnel)} % Your address
+\address{17 Rue du Général Frère \\ Vandoeuvre les Nancy, 54500 France (Privete)} % Your secondary addess (optional)
+\address{(+33) 07~$\cdot$~77~$\cdot$~33~$\cdot$~37~$\cdot$~64 \\ sini.aghilas@gmail.com} % Your phone number and email
+\address{(+33) 03~$\cdot$~83~$\cdot$~59~$\cdot$~20~$\cdot$~97 \\ aghilas.sini@inria.fr} % Your phone number and email
+
+\pagestyle{empty} % pour ne pas indiquer de numéro de page...
+\begin{document}
+\newlength{\lenA} % indentation au début d'une ligne
+\setlength{\lenA}{0.cm}
+\newlength{\lenB} % Taille champ dates
+\newlength{\lenC} % Taille champ description
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% en-tête 			%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+
+   
+ 
+
+\begin{rubrique}[21cm]{Research Interest}
+\ligne{0.1mm}	%%%%%%%%%
+	Speech and Image Processing, Data Science, Machine learning.
+\end{rubrique}        
+\interRubrique
+
+
+\begin{rubrique}[3.4cm]{Education}
+\ligne{0.1mm}	
+\end{rubrique} 
+ \interRubrique
+ 
+ \begin{rubrique}[2cm]{\textit{ Academic background}}
+ \\
+    2014
+    & \activite{Master 2 \-- Artificial Intelligence, Pattern Recognition and Robotics}\\
+    & \lieu{University Paul SABATIER- TOULOUSE.} \comment{France} \\ \\
+   
+    2013
+    & \activite{Master 1 \-- Real Time Systems Engineering} \\
+     & \lieu{University Paul SABATIER- TOULOUSE.}\comment{France}  \\ \\
+  
+    2011 		
+     & \activite{B.Sc \--	Control System and Automation}\\
+    & \lieu{University Mouloud MAMMERI- TIZI OUZOU.} \comment{Algeria}
+\end{rubrique}
+ \interRubrique
+ \\
+  
+	\begin{rubrique}[2cm]{\textit{WorkShop attended}}\\
+    5-6 Nov &\activite{Workshop on "Feedback in Pronunciation Training"}\\   
+   2015 &\lieu{Hofgut Imsbach, Northern Saarland, Germany}
+    \end{rubrique} 
+ \interRubrique
+ \\
+\begin{rubrique}[3.4cm]{Professional Experience}    
+    \ligne{0.1mm}
+\end{rubrique} 
+\interRubrique
+\\
+\begin{rubrique}[2.0cm]{\textit{Engineer}}\\
+Jan 2016 &\activite{Lecturer in Web Programming}\\
+Mar 2016	 &\lieu{IUT Charlemagne,Lorraine University Nancy.}\\
+		 &\-- JavaScript, Ajax, JQuery, second years post
+		  baccalaureat (Bac+2)\\ \\
+
+Jan 2016 &\activite{IFCASL Project Individualized Feedback for Computer-Assisted Spoken Language 
+  Learning} \\ 
+		 &\lieu{LORIA Laboratory Nancy.}\\
+		 &\-- Modification and resythesis of learner audio samples using teacher audio samples based on Pitch Synchronous Overlap And Add Algorithm\\
+		&\-- Feedback to
+correct devoicing of final consonants in French  spoken by German learner.\\
+		&\-- improving speech texte alignemt for language learning using deep neural network, training network with theano and decoding with DN4J (IFCASL Corpus).\\ 		
+		&\-- speech features extraction for pitch detection using deep neural network.\\ 
+		\\
+Nov 2014 
+ &\activite{ORTOLANG Project Open Resources and TOols for LANGuage}\\ 			Jan 2016&\lieu{LORIA Laboratory Nancy.}\\
+	&\-- Developement of syntactic-semantic analyser for spoken documents in  French language \-- open source tool J\--Safran released by LORIA. Includes dependency parser for oral speech and inclusion of inference of partial semantic role labels on top of syntactic parsing.\\
+	&\-- Tool for semi\--automatic alignement of speech and textual corpus \-- open source tool JTRANS relesead by LORIA. Working on correction of speech and text alignement around silence segments.\\
+	&\-- Interactive tool for speech signal processing and phonetics \-- open source tool JSnoori released by LORIA. Developement of module for pitch estimation.
+\end{rubrique}
+   \interRubrique
+   \\
+   \begin{rubrique}[2.0cm]{\textit{ Intership}}\\
+ Mar 2014 
+   & \activite{Mapping of a sound environment for a mobile robot}\\
+Aug 2014 	& \lieu{LORIA Laboratory Nancy.}\\
+	& \bull Control of a mobile robot movements to localize a sound source as quickly as possible. The belief about the source position is represented by a discrete grid and a dynamic programming algorithm  was introduced to find the optimal robot motion minimizing the entropy of the grid.\\
+	\end{rubrique} 
+\interRubrique
+\\
+\begin{rubrique}[16cm]{Publications:}
+ \ligne{0.1mm}
+E. Vincent, A. Sini and F. Charpillet, "Audio source localization by optimal control of a mobile robot," Acoustics, Speech and Signal Processing (ICASSP), 2015 IEEE International Conference on, South Brisbane, QLD, 2015, pp. 5630-5634.
+\\
+\end{rubrique}
+ \interRubrique
+ \\
+\begin{rubrique}[3.4cm]{Activities \& Independents Courses}\\   
+    \ligne{0.1mm}
+\end{rubrique} 
+	\interRubrique
+\\
+   \begin{rubrique}[3.4cm]{\textit{ Other Activities}}\\
+	  & \-- Data collection for IFCASL Project \\
+   	 &\-- Member of Deep Learning Group at LORIA\\
+  	 & \-- volunteer for MRI Data Collections\\
+	 & \-- Hosted the booth for demonstration of tools in "Village des Sciences" at LORIA 
+\end{rubrique} 
+\interRubrique
+\\
+ \begin{rubrique}[3.4cm]{\textit{ Online Certificate Courses}}\\
+   Oct 2015 
+    & \activite{Digital Signal Processing }\\
+   Dec 2015& \lieu{École polytechnique fédérale de Lausanne} \comment{\textbf{taught by Prof. Paolo Prandoni \& Martin Vetterli}} \\ \\
+    
+    %%%%%%
+     Jan 2016 
+    & \activite{Data Science Specialisation }\\
+  present  & \lieu{Johns-Hopkins University} \comment{\textbf{by Jeff Leek, PhD, Roger D. Peng, PhD \& Brian Caffo, PhD}}\\ \\
+    %%%%%%
+      Dec 2015
+   & \activite{ Machine Learning  }\\
+present& \lieu{Stanford University} \comment{\textbf{ by Andrew Ng}} \\ \\
+	\end{rubrique}
+	\interRubrique
+	\\
+\begin{rubrique}[3.4cm]{Computer Skills}
+   \ligne{0.1mm}
+   \textbf{Scripting} &Shell script, Windows Batch script, Jython, Python\\   \textbf{Programming} & C, C++, Java\\
+   \textbf{Scientific} &  	Matlab/Octave, Theano, R\\
+   \textbf{Web}&HTML, CSS, PHP, JavaScript, Ajax, JQuery\\
+   \textbf{Databases}& MySQL, PostgreSQL.\\
+   \textbf{Protocols \& APIs} & XML, JSON, SOAP, REST\\
+   \textbf{Tools} & Git, Ant, Maven, Vim.
+\end{rubrique}
+\interRubrique
+\\
+
+
+\begin{rubrique}[3.4cm]{Language}
+    \ligne{0.1mm}
+	\textbf{Kabyle} & native\\
+	\textbf{French} & fluent \\  
+	\textbf{Arabic} & fluent \\   
+    \textbf{English}& intermediate\\ 
+    \textbf{German} & beginner
+    
+\end{rubrique}
+\interRubrique
+\\
+\begin{rubrique}[3.4cm]{Referees:}
+ \ligne{0.1mm}
+ 
+\textbf{Denis Jouvet}  & Research Director, INRIA Multispeech\\
+					& denis.jouvet@inria.fr \\
+\textbf{Emmanuel Vincent} & Senior Researcher, INRIA Multispeech\\    		 
+					& emmanuel.vincent@inria.fr \\
+ 
+\textbf{François Charpillet} & Research Director, INRIA Larsen\\      
+						& francois.charpillet@inria.fr \\
+						 
+\textbf{Yves Laprie} & Research Director, CNRS Multispeech\\      
+						& yves.laprie@loria.fr \\
+
+\end{rubrique} 
+\interRubrique
+
+%%\begin{rubrique}[10.8cm]{Personal Interest:}
+%%\ligne{0.1mm}
+%%\end{rubrique}
+%%\interRubrique
+% 
+%\begin{rubrique}[20cm]{Contact Details:}
+%\ligne{0.1mm}
+%\textbf{Email} \hspace{1.9cm}  sini.aghilas@gmail.com
+%\end{rubrique} 
+\end{document}
+
