@@ -19,7 +19,7 @@
 \usepackage{graphicx} % Pour insérer des images
 \usepackage{wrapfig} % Pour placer les images
 
-\setmarginsrb{1.2cm}{1.0cm}{1.0cm}{1.2cm}{0cm}{0cm}{0cm}{0cm}
+\setmarginsrb{0.9cm}{0.9cm}{0.9cm}{0.9cm}{0cm}{0cm}{0cm}{0cm}
 
 \usepackage{relsize}
 
@@ -28,7 +28,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % ligne horizontale sur toute la page. Usage : \ligne{Largeur}
-\newcommand{\ligne}[1]{\rule[0.5ex]{\textwidth}{#1}\\}
+\newcommand{\ligne}[1]{\rule[0.4ex]{\textwidth}{#1}\\}
 \newcommand{\interRubrique}{\bigskip}
 \newcommand{\styleRub}[1]{\noindent\textbf{\large #1}\par}
 \newcommand{\indentStd}{\noindent\hspace{\lenA}}
@@ -106,9 +106,9 @@
 % Début du CV proprement dit (ouf ! :) ) %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \name{Aghilas SINI} % Your name
-\address{615 Rue du Jardin Botanique \\ Villers les Nancy , 54600 France (professionnel)} % Your address
-\address{17 Rue du Général Frère \\ Vandoeuvre les Nancy, 54500 France (Privete)} % Your secondary addess (optional)
-\address{(+33) 07~$\cdot$~77~$\cdot$~33~$\cdot$~37~$\cdot$~64 \\ sini.aghilas@gmail.com} % Your phone number and email
+\address{(+33) 07~$\cdot$~77~$\cdot$~33~$\cdot$~37~$\cdot$~64 \\ sini.aghilas@gmail.com} % Your address
+\address{615 Rue du Jardin Botanique \\ Villers les Nancy , 54600 France (professionnel)} % Your secondary addess (optional)
+\address{\textbf{\large{Research And Development Engineer}}} % Your phone number and email
 %\address{(+33) 03~$\cdot$~83~$\cdot$~59~$\cdot$~20~$\cdot$~97 \\ aghilas.sini@inria.fr} % Your phone number and email
 
 \pagestyle{empty} % pour ne pas indiquer de numéro de page...
@@ -124,23 +124,8 @@
 % en-tête 			%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
 
-   
- 
-
-\begin{rubrique}[21cm]{Research Interest}
-\ligne{0.1mm}	%%%%%%%%%
-	Speech and Image Processing, Data Science, Machine learning.
-\end{rubrique}        
-\interRubrique
-
-
-\begin{rubrique}[3.4cm]{Education}
+\begin{rubrique}[2.0cm]{Education}
 \ligne{0.1mm}	
-\end{rubrique} 
- \interRubrique
- 
- \begin{rubrique}[2cm]{\textit{ Academic background}}
- \\
     2014
     & \activite{Master 2 \-- Artificial Intelligence, Pattern Recognition and Robotics}\\
     & \lieu{University Paul SABATIER- TOULOUSE.} \comment{France} \\ \\
@@ -152,27 +137,19 @@
     2011 		
      & \activite{B.Sc \--	Control System and Automation}\\
     & \lieu{University Mouloud MAMMERI- TIZI OUZOU.} \comment{Algeria}
-\end{rubrique}
+\end{rubrique} 
  \interRubrique
- \\
-  
-	\begin{rubrique}[2cm]{\textit{WorkShop attended}}\\
-    5-6 Nov &\activite{Workshop on "Feedback in Pronunciation Training"}\\   
-   2015 &\lieu{Hofgut Imsbach, Northern Saarland, Germany}
-    \end{rubrique} 
- \interRubrique
- \\
+
 \begin{rubrique}[3.4cm]{Professional Experience}    
     \ligne{0.1mm}
 \end{rubrique} 
 \interRubrique
-\\
-\begin{rubrique}[2.0cm]{\textit{Engineer}}\\
+
+\begin{rubrique}[2.0cm]{\textit{Engineer}}
 Jan 2016 &\activite{Lecturer in Web Programming}\\
 Mar 2016	 &\lieu{IUT Charlemagne, Université de Lorraine, Nancy.}\\
 		 &\-- JavaScript, Ajax, JQuery, second years post
 		  baccalaureat (Bac+2)\\ \\
-
 Jan 2016 &\activite{IFCASL Project Individualized Feedback for Computer-Assisted Spoken Language 
   Learning} \\ 
 		 &\lieu{LORIA Laboratory Nancy.}\\
@@ -181,7 +158,6 @@ Jan 2016 &\activite{IFCASL Project Individualized Feedback for Computer-Assisted
 correct devoicing of final consonants in French  spoken by German learners.\\
 		&\-- improving speech text alignment for language learning using deep neural network, training network with theano and decoding with DL4J (IFCASL Corpus).\\ 		
 		&\-- extraction of speech features  for pitch detection using deep neural network.\\ 
-		\\
 Nov 2014 
  &\activite{ORTOLANG Project Open Resources and TOols for LANGuage}\\ 			Jan 2016&\lieu{LORIA Laboratory Nancy.}\\
 	&\-- Development of syntactic-semantic analyser for spoken documents in  French language \-- open source tool J\--Safran released by LORIA. Includes dependency parser for oral speech and inclusion of inference of partial semantic role labels on top of syntactic parsing.\\
@@ -190,8 +166,8 @@ Nov 2014
 	&\-- Interactive tool for speech signal processing and phonetics \-- open source tool JSnoori released by LORIA. Development of module for pitch estimation.
 \end{rubrique}
    \interRubrique
-   \\
-   \begin{rubrique}[2.0cm]{\textit{ Internship}}\\
+   
+   \begin{rubrique}[2.0cm]{\textit{ Internship}}
  Mar 2014 
    & \activite{Mapping of a sound environment for a mobile robot}\\
 Aug 2014 	& \lieu{LORIA Laboratory Nancy.}\\
@@ -202,88 +178,28 @@ Aug 2014 	& \lieu{LORIA Laboratory Nancy.}\\
 \begin{rubrique}[16cm]{Publications}
  \ligne{0.1mm}
 E. Vincent, A. Sini and F. Charpillet, "Audio source localization by optimal control of a mobile robot," Acoustics, Speech and Signal Processing (ICASSP), 2015 IEEE International Conference on, South Brisbane, QLD, 2015, pp. 5630-5634.
-\\
 \end{rubrique}
- \interRubrique
- \\
-\begin{rubrique}[3.4cm]{Activities \& Independent Courses}\\   
-    \ligne{0.1mm}
-\end{rubrique} 
-	\interRubrique
-\\
-   \begin{rubrique}[3.4cm]{\textit{ Other Activities}}\\
-	  & \-- Data collection for IFCASL Project \\
-   	 &\-- Member of Deep Learning Discussion Group at LORIA\\
-  	 & \-- volunteer for MRI Data Collections\\
-	 & \-- Hosted the booth for demonstration of tools in "Village des Sciences" at LORIA 
-\end{rubrique} 
 \interRubrique
-\\
- \begin{rubrique}[3.4cm]{\textit{ Online Certificate Courses}}\\
-   Oct 2015 
-    & \activite{Digital Signal Processing }\\
-   Dec 2015& \lieu{École polytechnique fédérale de Lausanne} \comment{\textbf{taught by Prof. Paolo Prandoni \& Martin Vetterli}} \\ \\
-    
-    %%%%%%
-     Jan 2016 
-    & \activite{Data Science Specialisation }\\
-  present  & \lieu{Johns-Hopkins University} \comment{\textbf{by Jeff Leek, Roger D. Peng \& Brian Caffo}}\\ \\
-    %%%%%%
-      Dec 2015
-   & \activite{ Machine Learning  }\\
-present& \lieu{Stanford University} \comment{\textbf{ by Andrew Ng}} \\ \\
-	\end{rubrique}
-	\interRubrique
-	\\
+
 \begin{rubrique}[3.4cm]{Computer Skills}
    \ligne{0.1mm}
-   \textbf{Scripting} &Shell script, Windows Batch script, Jython, Python\\   \textbf{Programming} & C, C++, Java\\
-   \textbf{Scientific} &  	Matlab/Octave, Theano, R\\
-   \textbf{Web}&HTML, CSS, PHP, JavaScript, Ajax, JQuery\\
-   \textbf{Databases}& MySQL, PostgreSQL.\\
-   \textbf{Protocols \& APIs} & XML, JSON, SOAP, REST\\
-   \textbf{Tools} & Git, Ant, Maven, Vim.
+   \textbf{Programming} &Shell script, Windows Batch script, Java, Jython, Python, C, C++\\ 
+   \textbf{Scientific} &  	Matlab/Octave, TensorFlow, Theano, R, ROS\\
+   \textbf{Web}&HTML, CSS, JavaScript, Ajax, JQuery\\
+   \textbf{Technologies} & XML, JSON, REST, Git, Ant, Maven, Vim, jenkins\\
 \end{rubrique}
 \interRubrique
-\\
 
-
-\begin{rubrique}[3.4cm]{Language}
-    \ligne{0.1mm}
-	\textbf{Kabyle} & native\\
-	\textbf{French} & fluent \\  
-	\textbf{Arabic} & fluent \\   
-    \textbf{English}& intermediate\\ 
-    \textbf{German} & beginner
-    
-\end{rubrique}
-\interRubrique
-\\
-\begin{rubrique}[3.4cm]{Referees:}
- \ligne{0.1mm}
- 
-\textbf{Denis Jouvet}  & Research Director, INRIA Multispeech\\
-					& denis.jouvet@inria.fr \\
-\textbf{Emmanuel Vincent} & Senior Researcher, INRIA Multispeech\\    		 
-					& emmanuel.vincent@inria.fr \\
- 
-\textbf{François Charpillet} & Research Director, INRIA Larsen\\      
-						& francois.charpillet@inria.fr \\
-						 
-\textbf{Yves Laprie} & Research Director, CNRS Multispeech\\      
-						& yves.laprie@loria.fr \\
-
-\end{rubrique} 
+\begin{rubrique}[21cm]{Language}
+\ligne{0.1mm}	%%%%%%%%%
+	\textbf{Kabyle} \, (native)\,
+	\textbf{French} \, (fluent)\,  
+	\textbf{Arabic} \, (fluent) \,  
+    \textbf{English} \,(intermediate)\,
+    \textbf{German}\,  (beginner)
+\end{rubrique}        
 \interRubrique
 
-%%\begin{rubrique}[10.8cm]{Personal Interest:}
-%%\ligne{0.1mm}
-%%\end{rubrique}
-%%\interRubrique
-% 
-%\begin{rubrique}[20cm]{Contact Details:}
-%\ligne{0.1mm}
-%\textbf{Email} \hspace{1.9cm}  sini.aghilas@gmail.com
-%\end{rubrique} 
+
 \end{document}
 
