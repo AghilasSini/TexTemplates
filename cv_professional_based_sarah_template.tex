@@ -1,0 +1,249 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Auteur : Aghilas Sini %
+% Créé le : 18/06/2013    %
+% Version : 1.8             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Commandes pour la compilation	%
+% latex cv.tex                 	%
+% dvips -Ppdf -t a4 cv.dvi     	%
+% ps2pdf cv.ps                 	%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper,oneside]{resume}
+
+
+\usepackage[english]{babel} 
+\usepackage[latin1]{inputenc}  % les accents dans le fichier.tex
+
+\usepackage{vmargin} %left, top, right, bottom
+\usepackage{graphicx} % Pour insérer des images
+\usepackage{wrapfig} % Pour placer les images
+
+\setmarginsrb{2.2cm}{2.0cm}{2.0cm}{2.2cm}{0.96cm}{0.96cm}{0.96cm}{0.96cm}
+
+\usepackage{relsize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Définition de quelques macros    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% ligne horizontale sur toute la page. Usage : \ligne{Largeur}
+\newcommand{\ligne}[1]{\rule[0.5ex]{\textwidth}{#1}\\}
+\newcommand{\interRubrique}{\smallskip}
+\newcommand{\styleRub}[1]{\noindent\textbf{\large #1}\par}
+\newcommand{\indentStd}{\noindent\hspace{\lenA}}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Commandes Personnalisées    	  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Personnalisation du titre avec un cadre grisé.
+\newcommand{\mytitle}[1]{
+    \begin{center}
+    {\large \parashade[.87]{sharpcorners}{\textbf{#1 \vphantom{p\^{E}}}}}
+    \end{center}
+}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% L'environnement "rubrique" 
+%
+% Usage : \begin{rubrique}[Ind3.4entation]{Titre} [...] \end{rubrique}
+% Ensuite, la première colonne contient par exemple les dates, la seconde
+% le descriptif.
+% Par exemple :
+%
+% \begin{rubrique}{3.5cm}{pipotage}
+% 1999--2000 	& ligne 1\\
+% 		& ligne 2\\
+% 1998--1999	& ligne 1\\
+% [etc...]
+% \end{rubrique}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newenvironment{rubrique}[2][\linewidth] {
+    \styleRub{#2}
+    \setlength{\lenB}{#1}
+    \setlength{\lenC}{\linewidth}
+    \addtolength{\lenC}{-\lenA}
+    \addtolength{\lenC}{-\lenB}
+    \addtolength{\lenC}{-\parindent}
+    \addtolength{\lenC}{-9pt}
+    \indentStd\begin{tabular}[t]{p{\lenB}p{\lenC}}
+}
+{\end{tabular}}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Commandes utilisables dans le descriptif %
+%					   %
+% Modifiables à loisir... 		   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\projectname}[1]{\small{\textsl{#1}\ }}
+\newcommand{\lieu}[1]{\small{\textsl{#1}\ }}
+\newcommand{\activite}[1]{\textbf{#1}\ }
+\newcommand{\comment}[1]{\textsl{#1}\ }
+\newcommand*\bull{\ \ \raisebox{-0.365em}[-0.15em][-0.15em]{\textscale{4}{$\cdot$}} \ } % Custom bullet point for separating content
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Début du CV proprement dit (ouf ! :) ) %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\name{Aghilas SINI} % Your name
+\address{(+33) 07~$\cdot$~77~$\cdot$~33~$\cdot$~37~$\cdot$~64 \\ sini.aghilas@gmail.com} % Your address
+\address{615 Rue du Jardin Botanique \\ Villers les Nancy , 54600 France} % Your secondary addess (optional)
+\address{\textbf{\large{Research And Development Engineer	(2 ans d'expérience)}}} % Your phone number and email
+%\address{(+33) 03~$\cdot$~83~$\cdot$~59~$\cdot$~20~$\cdot$~97 \\ aghilas.sini@inria.fr} % Your phone number and email
+
+\pagestyle{empty} % pour ne pas indiquer de numéro de page...
+\begin{document}
+\newlength{\lenA} % indentation au début d'une ligne
+\setlength{\lenA}{0.cm}
+\newlength{\lenB} % Taille champ dates
+\newlength{\lenC} % Taille champ description
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% en-tête 			%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+
+   
+ 
+\begin{rSection}{Skills}
+\end{rSection}
+
+\begin{rubrique}[0.5cm]{Dévelopement web Front}
+	& JavaScript, jQuery, Ajax\\
+	& CSS3, Boostrap 3, HTML5
+\end{rubrique}
+\interRubrique
+\\
+\begin{rubrique}[0.5cm]{Simulation/Calcule Numérique}
+	& Matlab, Octave \\
+\end{rubrique}
+\interRubrique
+\\
+\begin{rubrique}[0.5cm]{Géstion de Génération/ Scafolding}
+	& Bower, Yeoman,Grunt, NPM\\
+\end{rubrique}
+\interRubrique
+\\
+\begin{rubrique}[0.5cm]{Machine Learning/Data Science/Robotic}
+	& DL4J, Theano, TensorFlow, R, ROS\\
+\end{rubrique}
+\interRubrique
+\\
+\begin{rubrique}[0.5cm]{Programming}
+	&  Shell script, Windows Batch script, Jython\\
+	& C, C++, Java, Python\\
+\end{rubrique}
+\interRubrique
+\\
+\begin{rubrique}[0.5cm]{Protocols \& APIs}
+	&  XML, JSON, SOAP, REST\\	
+\end{rubrique}
+\interRubrique
+\\
+\begin{rubrique}[0.5cm]{Méthode / Analyse}
+	&  Méthode UML, Agile(SCRUM)	
+\end{rubrique}
+\interRubrique
+\\
+\begin{rubrique}[0.5cm]{Gestion de configuration/Industrialisation}
+	& Git, Maven3, Jenkins\	
+\end{rubrique}
+\interRubrique
+\\
+
+
+
+\begin{rSection}{Education}
+\end{rSection} 
+ \begin{rubrique}[2cm]{}
+    2014
+    & \activite{Master 2 \-- Artificial Intelligence, Pattern Recognition and Robotics}\\
+    & \lieu{University Paul SABATIER- TOULOUSE.} \comment{France} \\ \\
+   
+    2013
+    & \activite{Master 1 \-- Real Time Systems Engineering} \\
+     & \lieu{University Paul SABATIER- TOULOUSE.}\comment{France}  \\ \\
+  
+    2011 		
+     & \activite{B.Sc \--	Control System and Automation}\\
+    & \lieu{University Mouloud MAMMERI- TIZI OUZOU.} \comment{Algeria}
+\end{rubrique}
+
+\newpage
+
+\begin{rSection}{Experience}
+\end{rSection}
+\begin{rubrique}[21cm]{\Large{January 2016 - March 2016}}
+\activite{Enseignant Vacataire}\\
+\lieu{IUT Charlemagne, Université de Lorraine, Nancy.} \comment{France}\\
+\end{rubrique}
+\interRubrique
+\\
+\begin{rubrique}[0.4cm]{\,\underline{\small{Principaux domaines d'intervantion}}}
+
+& \bull Introduction à la programmation Web \-- Front end \\
+& \bull Cours avancé en JavaScript, JQuery, Ajax, Rest.\\
+& \bull Mini Projet. 
+\end{rubrique}
+
+\interRubrique
+\begin{rubrique}[0.4cm]{\,\underline{\small{Environnement Technique}}}
+	&\bull JavaScript, JQuery, Ajax, JSON, Rest. 
+\end{rubrique}
+\interRubrique
+\\
+%------------------------------------------------
+
+
+
+%------------------------------------------------
+
+\begin{rubrique}[21cm]{\Large{January 2016 - Present}} \activite{Ingénieur de Recherche et Dévellopement}\\ \lieu{LORIA\--INRIA Nancy Laboratory.} \comment{France}\\ \projectname{IFCASL Project Individualized Feedback for Computer-Assisted Spoken Language 
+  Learning}
+\end{rubrique}
+\interRubrique
+
+\begin{rubrique}[0.4cm]{\,\underline{\small{Principaux domaines d'intervantion}}}
+		 &\bull Modification and re-synthesis  of learner audio samples using teacher audio samples based on Pitch Synchronous Overlap and Add algorithm\\
+		&\bull Feedback to
+correct devoicing of final consonants in French  spoken by German learners\\
+		&\bull \,Improving speech text alignment for language learning using deep neural network, training network with theano and decoding with DL4J (IFCASL Corpus)\\ 		
+		&\bull Extraction of speech features  for pitch detection using deep neural network
+\end{rubrique}
+\interRubrique
+\\
+\begin{rubrique}[0.4cm]{\,\underline{\small{Environnement Technique}}}
+	&\bull Java, Python, TensorFlow, Theano, R
+\end{rubrique}
+\interRubrique
+\\
+\begin{rubrique}[21cm]{\Large{November 2014 - December 2015}}
+\activite{Ingénieur de Recherche et Dévellopement}\\
+\lieu{LORIA\--INRIA Nancy Laboratory.} \comment{France}\\
+\projectname{ORTOLANG Project Open Resources and TOols for LANGuage}
+\end{rubrique}
+\interRubrique
+\\
+\begin{rubrique}[0.4cm]{\,\underline{\small{Principaux domaines d'intervantion}}}
+&\bull Development of syntactic-semantic analyser for spoken documents in  French language \-- open source tool J\--Safran released by LORIA. Includes dependency parser for oral speech and inclusion of inference of partial semantic role labels on top of syntactic parsing\\
+	&\bull Tool for semi\--automatic alignment of speech and textual corpus \-- open source tool JTRANS relesead by LORIA. Working on correction of speech text alignment
+ around silence segments.\\
+	&\bull \, Interactive tool for speech signal processing and phonetics \-- open source tool JSnoori released by LORIA. Development of module for pitch estimation\\
+\end{rubrique}
+\interRubrique
+\\
+\begin{rubrique}[0.4cm]{\,\underline{\small{Environnement Technique}}}
+& \bull Java, Jenkins, Git, Linux, Yoeman, Grunt, Bower ,NPM  
+
+\end{rubrique}
+\end{document}
+
