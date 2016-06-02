@@ -9,17 +9,17 @@
 % ps2pdf cv.ps                 	%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[a4paper,oneside]{resume}
+\documentclass[a4paper,oneside]{resumevo}
 
 
-\usepackage[english]{babel} 
+\usepackage[francais]{babel} 
 \usepackage[latin1]{inputenc}  % les accents dans le fichier.tex
 
 \usepackage{vmargin} %left, top, right, bottom
 \usepackage{graphicx} % Pour insérer des images
 \usepackage{wrapfig} % Pour placer les images
 
-\setmarginsrb{2.2cm}{0.0cm}{2.2cm}{2.2cm}{0.006cm}{0.96cm}{0.96cm}{0.96cm}
+\usepackage[left=1.75in,top=1.25in,right=0.25in,bottom=0.0in]{geometry} % Document margins
 
 \usepackage{relsize}
 
@@ -96,7 +96,7 @@
 \name{Aghilas SINI} % Your name
 \address{(+33) 07~$\cdot$~77~$\cdot$~33~$\cdot$~37~$\cdot$~64 \\ sini.aghilas@gmail.com} % Your address
 \address{615 Rue du Jardin Botanique \\ Villers les Nancy , 54600 France} % Your secondary addess (optional)
-\address{\textbf{\large{Research And Development Engineer	(2 ans d'expérience)}}} % Your phone number and email
+\address{\textbf{\Large{INGENIEUR R \& D	(2 ans d'expérience)}}} % Your phone number and email
 %\address{(+33) 03~$\cdot$~83~$\cdot$~59~$\cdot$~20~$\cdot$~97 \\ aghilas.sini@inria.fr} % Your phone number and email
 
 \pagestyle{empty} % pour ne pas indiquer de numéro de page...
@@ -105,145 +105,73 @@
 \setlength{\lenA}{0.cm}
 \newlength{\lenB} % Taille champ dates
 \newlength{\lenC} % Taille champ description
-
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % en-tête 			%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+\begin{rSection}{Compétences}
 
-   
- 
-\begin{rSection}{Skills}
+	{\bf Dévelopement web Front} \\\bull JavaScript, jQuery, Ajax\\
+	\bull CSS3, Boostrap 3, HTML5\\ \\
+	{\bf Simulation/Calcule Numérique}  \\ \bull Matlab, Octave   \\ \\
+	{\bf Géstion de Génération/ Scafolding} \\ \bull Bower, Yeoman,Grunt, NPM  \\ \\
+	{\bf Machine Learning/Data Science/Robotique}  \\ \bull DL4J, Theano, TensorFlow, R, ROS\\ \\
+	{\bf Language de programmation}\\
+		\bull Shell script, Windows Batch script, Jython\\
+		\bull C, C++, Java, Python\\\\
+	{\bf Protocols \& APIs}\\ \bull XML, JSON, SOAP, REST\\	\\
+	{\bf Méthode / Analyse}\\ \bull Méthode UML, Agile(SCRUM)	  \\\\
+	{\bf Géstion de configuration/Industrialisation}\\ \bull Git, Maven3, Jenkins, Cobertura 
 \end{rSection}
-\begin{rubrique}[0.5cm]{Dévelopement web Front}
-	&\bull JavaScript, jQuery, Ajax\\
-	&\bull CSS3, Boostrap 3, HTML5
-\end{rubrique}
-\interRubrique
-\\ 
-
-\begin{rubrique}[0.5cm]{Simulation/Calcule Numérique}
-	&\bull Matlab, Octave \\
-\end{rubrique}
-\interRubrique
-\\ 
-
-\begin{rubrique}[0.5cm]{Géstion de Génération/ Scafolding}
-	&\bull Bower, Yeoman,Grunt, NPM\\
-\end{rubrique}
-\interRubrique
-\\ 
-
-\begin{rubrique}[0.5cm]{Machine Learning/Data Science/Robotic}
-	&\bull DL4J, Theano, TensorFlow, R, ROS\\
-\end{rubrique}
-\interRubrique
-\\ 
-
-\begin{rubrique}[0.5cm]{Programming}
-	& \bull Shell script, Windows Batch script, Jython\\
-	& \bull C, C++, Java, Python\\
-\end{rubrique}
-\interRubrique
-\\
- 
-\begin{rubrique}[0.5cm]{Protocols \& APIs}
-	&  \bull XML, JSON, SOAP, REST\\	
-\end{rubrique}
-\interRubrique
-\\
- 
-\begin{rubrique}[0.5cm]{Méthode / Analyse}
-	&  \bull Méthode UML, Agile(SCRUM)	
-\end{rubrique}
-\interRubrique
-\\ 
-
-\begin{rubrique}[0.5cm]{Gestion de configuration/Industrialisation}
-	& Git, Maven3, Jenkins, Cobertura\	
-\end{rubrique}
-\interRubrique
-\\
-
-\begin{rSection}{Education}
+\begin{rSection}{Formations}
+{\bf Université Paul SABATIER- TOULOUSE.} \hfill {\em Octobre 2014} \\ 
+Master 2 \--  Intelligence artificielle, Reconnaissance des formes et Robotique \\ \\
+{\bf Université Paul SABATIER- TOULOUSE.} \hfill {\em Juillet 2013} \\ 
+Master 1 \-- Ingénieurie des Systems Temps Réel  \\ \\
+{\bf Université Mouloud MAMMERI- TIZI OUZOU.} \hfill {\em Juillet 2011} \\ 
+Licence \-- Automatique  
 \end{rSection} 
- \begin{rubrique}[2cm]{}
-    2014
-    & \activite{Master 2 \-- Artificial Intelligence, Pattern Recognition and Robotics}\\
-    & \lieu{University Paul SABATIER- TOULOUSE.} \comment{France} \\ \\ 
-    2013
-    & \activite{Master 1 \-- Real Time Systems Engineering} \\
-     & \lieu{University Paul SABATIER- TOULOUSE.}\comment{France}  \\ \\ 
-    2011 		
-     & \activite{B.Sc \--	Control System and Automation}\\
-    & \lieu{University Mouloud MAMMERI- TIZI OUZOU.} \comment{Algeria}\\ \\ 
-\end{rubrique}
-%\interRubrique
-%\\
-\newpage
 \begin{rSection}{Experience}
-\end{rSection}
-\begin{rubrique}[21cm]{\large{January 2016 - March 2016}}
-\activite{Enseignant Vacataire}\\
-\lieu{IUT Charlemagne, Université de Lorraine, Nancy.} \comment{France}\\
-\end{rubrique}
-\interRubrique
-\\
-
+\begin{rSubsection}{IUT Charlemagne, Université de Lorraine}{Janvier 2016 - Mars 2016}{Enseignant Vacataire}{Nancy, France}
 \begin{rubrique}[0.4cm]{\,\underline{\small{Principaux domaines d'intervantion}}}
-& \bull Introduction à la programmation Web \-- Front end \\
-& \bull Cours avancé en JavaScript, JQuery, Ajax, Rest.\\
-& \bull Mini Projet. 
+& \bull Cours de programmation Web coté Client (Niveau Bac+2) \\ \\
 \end{rubrique}
-\interRubrique
-\\
-
+ \interRubrique
 \begin{rubrique}[0.4cm]{\,\underline{\small{Environnement Technique}}}
-	&\bull JavaScript, JQuery, Ajax, JSON, Rest. 
+& \bull JavaScript, JQuery, Ajax, XML, JSON, Rest.   \\ 
 \end{rubrique}
-\interRubrique
-\\
+\end{rSubsection}
+ \interRubrique
 
-\begin{rubrique}[21cm]{\large{January 2016 - Present}} \activite{Ingénieur de Recherche et Dévellopement}\\ \lieu{LORIA\--INRIA Nancy Laboratory.} \comment{France}\\ \projectname{IFCASL Project Individualized Feedback for Computer-Assisted Spoken Language 
-  Learning}
-\end{rubrique}
-\interRubrique
-\\
-
+\begin{rSubsection}{LORIA\--INRIA Multispeech Group}{January 2016 - Present}{Ingénieur de Recherche et Dévellopement}{Nancy, France}
+\item  IFCASL Project Individualized Feedback for Computer-Assisted Spoken Language 
+  Learning\\
+  
 \begin{rubrique}[0.4cm]{\,\underline{\small{Principaux domaines d'intervantion}}}
-		 &\bull Dévellopement d'outils pour l'aide  à l'apprentissage de langue\\
+		 &\bull Dévellopement d'outils pour l'aide  à l'apprentissage de langue.\\
 		&\bull Dévellopement de scripts pour l'analyse de corpus de parole.\\
 		&\bull \,Implémentation de module pour modification de signal de parole.\\ 		
-		&\bull Implémentation de réseau de neuron approfondi pour l'alignment texte parole.
-\end{rubrique}
-\interRubrique
-\\
-
-\begin{rubrique}[0.4cm]{\,\underline{\small{Environnement Technique}}}
+		&\bull Implémentation de réseau de neuron approfondi.
+\end{rubrique} 
+ \interRubrique
+ 
+  \begin{rubrique}[0.4cm]{\,\underline{\small{Environnement Technique}}}
 	&\bull Java, Python \\
 	&\bull TensorFlow, Theano\\
-	&\bull  R, Jython, Windows Batch script,Shell script\\
+	&\bull R, Jython, Windows Batch script,Shell script\\
+	&\bull Grid5000
 \end{rubrique}
-\interRubrique
-\\
+\end{rSubsection}
 
-\begin{rubrique}[16cm]{\large{November 2014 - December 2015}}
-\activite{Ingénieur de Recherche et Dévellopement}\\
-\lieu{LORIA\--INRIA Nancy Laboratory.} \comment{France}\\
-\projectname{ORTOLANG Project Open Resources and TOols for LANGuage}
-\end{rubrique}
-\interRubrique
-\\
+\begin{rSubsection}{LORIA\--INRIA Multispeech Group }{November 2014 - December 2015}{Ingénieur de Recherche et Dévellopement}{Nancy, France}
+\item  ORTOLANG Project Open Resources and TOols for LANGuage\\
 
 \begin{rubrique}[0.4cm]{\,\underline{\small{ Principaux domaines d'intervantion}}}
-&\bull Maintenance évolutive d'outils de trgaitement et d'analyse du signal de parole.\\
+&\bull Maintenance évolutive d'outils de traitement et d'analyse du signal de parole.\\
 &\bull Re\--factoring du code, de l'architecture.\\
 	&\bull  Dévellopement de Portail web pour les outils.\\
 	&\bull  Ecriture de test unitaire, covering, d'integration continue.\\
 \end{rubrique}
-\interRubrique
-\\
+   \interRubrique
 
 \begin{rubrique}[0.4cm]{\,\underline{\small{Environnement Technique}}}
 & \bull Shell Script, Jython, Java, Linux.\\
@@ -251,57 +179,32 @@
 & \bull Yeoman, Bower, NPM, Grunt, Git.\\
 & \bull HTML5,CC3, JavaScript.\\
 \end{rubrique}
-
-\newpage
-\begin{rubrique}[16cm]{\large{ Mars 2014 -Août 2014  }}
-   \activite{Stage d'ingénieur de recherche}\\
-	\lieu{LORIA-INRIA Laboratory Nancy.}\\
-\end{rubrique}
-\interRubrique
-\\
-
+\end{rSubsection}
+\begin{rSubsection}{LORIA\--INRIA Multispeech Group}{Mars 2014 -Août 2014}{Stage d'ingénieur de recherche}{Nancy, France}
+\item Cartographie d'un environnement
+sonore par un robot mobile\\ \\
 \begin{rubrique}[0.4cm]{\,\underline{\small{Principaux domaines d'intervantion}}}
-	& \bull Control of a mobile robot movements to localize a sound source as quickly as possible. The belief about the source position is represented by a discrete grid and a dynamic programming algorithm  was introduced to find the optimal robot motion minimizing the entropy of the grid.\\
+	&\bull Implémentation de l'algorithm de programmation dynamique.\\
+	&\bull Adaptation de l'algorithm Grid d'occupations.\\
+	&\bull Modélisation de la Fonction de Transfére de la sources  
 	\end{rubrique} 
-\interRubrique
-\\
-
+ \interRubrique
+ 	
 \begin{rubrique}[0.4cm]{\,\underline{\small{Environnement Technique}}}
 	& \bull C/C++, Python\\
 	& \bull Robot Audition HARK, ROS\\
-	& \bull Kinect, TurtleBot, Linux. \\
+	& \bull Kinect, TurtleBot, Linux. 
 \end{rubrique}
-\interRubrique
-\\
-
-\begin{rSection}{Publication}
-\begin{rubrique}[0.4cm]{}
-&\bull E. Vincent, A. Sini and F. Charpillet, "Audio source localization by optimal control of a mobile robot", Acoustics, Speech and Signal Processing (ICASSP), 2015 IEEE International Conference on, South Brisbane, QLD, 2015, pp. 5630-5634.\\
-\end{rubrique} 
-\interRubrique
-\\
+\end{rSubsection}
 \end{rSection}
-
+\begin{rSection}{Publication}
+\-- E. Vincent, A. Sini and F. Charpillet, "Audio source localization by optimal control of a mobile robot", Acoustics, Speech and Signal Processing (ICASSP), 2015 IEEE International Conference on, South Brisbane, QLD, 2015, pp. 5630-5634.
+\end{rSection}
 \begin{rSection}{Language}
-\begin{rubrique}[16cm]{}
 	\textbf{Kabyle} \, (native)\,
 	\textbf{French} \, (fluent)\,  
     \textbf{English} \,(intermediate)\,
     \textbf{German}\,  (beginner)
-\end{rubrique}        
-\interRubrique
-\\
-
-\end{rSection}
-\begin{rSection}{Referents}
-\begin{rubrique}[3.4cm]{}
-\textbf{Yves Laprie} & Research Director, CNRS Multispeech\\      
-						& yves.laprie@loria.fr \\
-\textbf{Denis Jouvet}  & Research Director, INRIA Multispeech\\
-					& denis.jouvet@inria.fr \\
-\end{rubrique} 
-\interRubrique
-\\
 \end{rSection}
 
 
