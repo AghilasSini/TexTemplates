@@ -1,0 +1,84 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Full Size Formal Letter
+% LaTeX Template
+% Version 1.2 (8/2/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Micha Elmueller (http://micha.elmueller.net/)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+	pagenumber=false, % Removes page numbers from page 2 onwards
+	parskip=half, % Separates paragraphs with some whitespace, use parskip=full for more space or comment out to return to default
+	fromalign=right, % Aligns the from address to the right
+	foldmarks=true, % Prints small fold marks on the left of the page
+	addrfield=true % Set to false to hide the addressee section - you will then want to adjust the height of the body of the letter on the page by adding the following in this section: \makeatletter \@setplength{refvpos}{\useplength{toaddrvpos}} \makeatletter
+	]{scrlttr2}
+
+\usepackage[english]{babel} % Explicitly load the babel package to stop an error occurring on some LaTeX installations
+\usepackage[colorlinks, urlcolor=blue]{hyperref}
+\renewcommand*{\raggedsignature}{\raggedright} % Stop the signature from indenting
+
+%----------------------------------------------------------------------------------------
+%	YOUR INFORMATION AND LETTER DATE
+%----------------------------------------------------------------------------------------
+
+\setkomavar{fromname}{Aghilas SINI } % Your name used in the from address
+\setkomavar{fromaddress}{INRIA, 615 Rue du Jardin botanique\\ 54600 Villers-l\`{e}s-Nancy\\France} % Your address
+\setkomavar{signature}{Aghilas SINI} % Your name used in the signature
+
+\date{\today} % Date of the letter
+
+%----------------------------------------------------------------------------------------
+ 
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	ADDRESSEE
+%----------------------------------------------------------------------------------------
+ 
+\begin{letter}{Philip GARNER \\ Idiap Research Institute\\ Centre du Parc \\ Rue Marconi 19  \\ PO Box 592 \\CH - 1920 Martigny \\Switzerland} % Addressee name and address
+
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT
+%----------------------------------------------------------------------------------------
+
+\opening{Dear Philip GARNER,}
+
+I am writing to express my interest in the open PhD position titled ``Multilingual Affective Speech Synthesis ", posted at \href{https://www.idiap.ch/education-and-jobs}{Idiap Research Institute} website. I am currently research engineer with the Multispeech team at LORIA-INRIA laboratory Nancy, France. Where I pursuing my interest in speech signal processing for the past two years.I respectfully submit this letter of application for the PhD position at 
+Idiap since I believe my experience so far and my quest for knowledge make me qualified to meet the needs of the program. 
+		
+At LORIA-INRIA I have been working in the area of Computer-Assisted Spoken Language Learning to assist German speakers to learner French. My contribution is towards both the signal processing and machine learning aspects including; speech feature extraction, speech modification and dynamic programming. Previously, I worked on speech text alignment where I was  introduce me to speech recognition. My master's intern-ship with Emmanuel Vincent and François Charptier, explored audio source localisation by mobile robot.A novel approach based on grid occupancy was proposed, this work got published in IEEE ICASSP 2015 Conference.  This experiences demonstrate my research skills and exposure. My MSc courses on signal processing, pattern recognition and machine learning laid the foundation for these.   
+
+		
+While contributing to the development of open source speech such as: JSnoori, JTrans and JSafran tools at LORIA-INRIA, I gained expertise in different programming languages like C/C++, Java, Python and JavaScript. At the same time I got a hands on experience in various algorithms and programming paradigms. And I got well acquainted 	to cluster computing environment	and tools for coding within team project. Recently I was introduced to the Theano and DL4J frameworks for implementation of deep learning architectures.Similarly during MSc intern-ship, I worked with Kinect based robot audio acquisition. These demonstrate my ability to easily adapt to new
+ R\&D environments.    
+
+ The above experiences have made me well aware of the challenges of research. As an individual I also got the opportunity to develop my interpersonal communication and team 		
+skills.Working on multi-disciplinary projects involved coordination within  team as well as collaboration with other teams. Giving courses to students was one of the great experience that I had, which taught me to communicate to a large group. I am confident that this will enable me to serve me well in your project.
+
+Thank you for your time. Looking forward to discuss with you.
+
+
+\closing{Sincerely,}
+
+\setkomavar*{enclseparator}{Attached} % Change the default "encl:" to "Attached:"
+\encl{Curicullum Vitae} % Attached documents
+
+%----------------------------------------------------------------------------------------
+
+\end{letter}
+ 
+\end{document}
