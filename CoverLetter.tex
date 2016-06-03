@@ -1,12 +1,62 @@
-\documentclass[10pt,a4paper]{letter}
-\usepackage[utf8]{inputenc}
-\usepackage[english]{babel}
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
-\usepackage{hyperref}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Full Size Formal Letter
+% LaTeX Template
+% Version 1.2 (8/2/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Micha Elmueller (http://micha.elmueller.net/)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+	pagenumber=false, % Removes page numbers from page 2 onwards
+	parskip=half, % Separates paragraphs with some whitespace, use parskip=full for more space or comment out to return to default
+	fromalign=right, % Aligns the from address to the right
+	foldmarks=true, % Prints small fold marks on the left of the page
+	addrfield=true % Set to false to hide the addressee section - you will then want to adjust the height of the body of the letter on the page by adding the following in this section: \makeatletter \@setplength{refvpos}{\useplength{toaddrvpos}} \makeatletter
+	]{scrlttr2}
+
+\usepackage[english]{babel} % Explicitly load the babel package to stop an error occurring on some LaTeX installations
+\usepackage[colorlinks, urlcolor=blue]{hyperref}
+\renewcommand*{\raggedsignature}{\raggedright} % Stop the signature from indenting
+
+%----------------------------------------------------------------------------------------
+%	YOUR INFORMATION AND LETTER DATE
+%----------------------------------------------------------------------------------------
+
+\setkomavar{fromname}{Aghilas SINI } % Your name used in the from address
+\setkomavar{fromaddress}{INRIA, 615 Rue du Jardin botanique\\ 54600 Villers-l\`{e}s-Nancy\\France} % Your address
+\setkomavar{signature}{Aghilas SINI} % Your name used in the signature
+
+\date{\today} % Date of the letter
+
+%----------------------------------------------------------------------------------------
+ 
 \begin{document}
-Dear Philip GARNER,\\
+
+%----------------------------------------------------------------------------------------
+%	ADDRESSEE
+%----------------------------------------------------------------------------------------
+ 
+\begin{letter}{Philip GARNER \\ Idiap Research Institute\\ Centre du Parc \\ Rue Marconi 19  \\ PO Box 592 \\CH - 1920 Martigny \\Switzerland} % Addressee name and address
+
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT
+%----------------------------------------------------------------------------------------
+
+\opening{Dear Philip GARNER,}
+
 
 
 		I am writing to express my interest in the open PhD position titled "Multilingual Affective Speech Synthesis ", posted at \href{https://www.idiap.ch/education-and-jobs}{Idiap Research Institute} website. I am currently a research engineer with the Multispeech team at LORIA-INRIA laboratory Nancy, France, where I have been pursuing my interest in speech signal processing for the past two years. I respectfully submit this letter of application for the PhD position at 
@@ -27,9 +77,13 @@ skills. Working on multi-disciplinary projects involved coordination within  tea
  
 	Thank you for your time. Looking forward to discuss with you in this regard.
 	
-Sincerely,
+\closing{Sincerely,}
 
-Aghilas SINI
-	
-		
+\setkomavar*{enclseparator}{Attached} % Change the default "encl:" to "Attached:"
+\encl{Curicullum Vitae} % Attached documents
+
+%----------------------------------------------------------------------------------------
+
+\end{letter}
+ 
 \end{document}
