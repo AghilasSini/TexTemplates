@@ -106,8 +106,7 @@
 % Début du CV proprement dit (ouf ! :) ) %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \name{Aghilas SINI} % Your name
-\address{615 Rue du Jardin Botanique \\ Villers les Nancy , 54600 France (Professionnel)} % Your address
-\address{17 Rue du Général Frère \\ Vandoeuvre les Nancy, 54500 France (Private)} % Your secondary addess (optional)
+\address{615 Rue du Jardin Botanique \\ Villers les Nancy , 54600 France} % Your Your secondary addess (optional)
 \address{(+33) 07~$\cdot$~77~$\cdot$~33~$\cdot$~37~$\cdot$~64 \\ sini.aghilas@gmail.com} % Your phone number and email
 %\address{(+33) 03~$\cdot$~83~$\cdot$~59~$\cdot$~20~$\cdot$~97 \\ aghilas.sini@inria.fr} % Your phone number and email
 
@@ -127,18 +126,19 @@
    
  
 
-\begin{rubrique}[21cm]{Research Interest}
-\ligne{0.1mm}	%%%%%%%%%
-	Speech and Image Processing, Data Science, Machine learning.
+\begin{rubrique}[21cm]{\underline{Research Interest}}\\
+	Speech and Language Processing, Machine learning.
 \end{rubrique}        
 \interRubrique
 
+%\begin{rubrique}[3.4cm]\underline{Education}}
 
-\begin{rubrique}[3.4cm]{Education}
-\ligne{0.1mm}	
-\end{rubrique} 
- \interRubrique
+%\end{rubrique} 
+% \interRubrique
  
+
+\begin{rubrique}[3.4cm]{\underline{Education}}
+\end{rubrique}  \\
  \begin{rubrique}[2cm]{\textit{ Academic background}}
  \\
     2014
@@ -153,34 +153,45 @@
      & \activite{B.Sc \--	Control System and Automation}\\
     & \lieu{Université Mouloud MAMMERI- TIZI OUZOU.} \comment{Algeria}
 \end{rubrique}
- \interRubrique
- \\
-  
+\interRubrique
 	\begin{rubrique}[2cm]{\textit{Workshop attended}}\\
    Nov &\activite{Workshop on ``Feedback in Pronunciation Training``}\\   
    2015 &\lieu{Hofgut Imsbach, Northern Saarland, Germany}
     \end{rubrique} 
  \interRubrique
  \\
-\begin{rubrique}[3.4cm]{Professional Experience}    
-    \ligne{0.1mm}
+	\begin{rubrique}[2cm]{\textit{Summer School attended}}\\
+   Jul &\activite{Speech Synthesis Summer School }\\   
+   2016 &\lieu{University of Crete, Heraklion, Crete, Greece}
+    \end{rubrique}  
+ \interRubrique
+ \\
+
+
+
+
+
+\begin{rubrique}[3.4cm]{\underline{Professional Experience}}
 \end{rubrique} 
+
+\begin{rubrique}[2.0cm]{\textit{As an engineer}}
 \interRubrique
+ \\
+ &\activite{IFCASL Project (Individualized Feedback for Computer-Assisted Spoken Language 
+  Learning)} \\ 
+
+Jan 2016		 &\lieu{LORIA\--INRIA Laboratory Nancy.}\\
+present		&\--  Automatic pronounciation diagnosis and error detection for germans learning french\\	
+		 &\-- Modification and re-synthesis  of learner audio samples using teacher audio samples based on Pitch Synchronous Overlap and Add algorithm\label{CALL}\\
+		&\-- Feedback to correct devoicing of final consonants in French  spoken by German learners.\\
+		&\-- Improving speech text alignment for language learning using deep neural network, training network with TensorFlow and decoding with DL4J (IFCASL Corpus).\\ 		
+		&\-- Extraction of speech features  for pitch detection using deep neural network.\\ 
 \\
-\begin{rubrique}[2.0cm]{\textit{Engineer}}\\
 Jan 2016 &\activite{Lecturer in Web Programming}\\
 Mar 2016	 &\lieu{IUT Charlemagne, Université de Lorraine, Nancy}\\
 		 &\-- JavaScript, Ajax, JQuery. For second year post
 		  baccalaureat students\\ \\
 
-Jan 2016 &\activite{IFCASL Project (Individualized Feedback for Computer-Assisted Spoken Language 
-  Learning)} \\ 
-		 &\lieu{LORIA\--INRIA Laboratory Nancy.}\\
-		 &\-- Modification and re-synthesis  of learner audio samples using teacher audio samples based on Pitch Synchronous Overlap and Add algorithm\\
-		&\-- Feedback to correct devoicing of final consonants in French  spoken by German learners.\\
-		&\-- Improving speech text alignment for language learning using deep neural network, training network with TensorFlow and decoding with DL4J (IFCASL Corpus).\\ 		
-		&\-- Extraction of speech features  for pitch detection using deep neural network.\\ 
-		\\
 Nov 2014 
  &\activite{ORTOLANG Project Open Resources and TOols for LANGuage}\\ 			Jan 2016&\lieu{LORIA\--INRIA Laboratory Nancy.}\\
 	&\-- Development of syntactic-semantic analyser tool called J\--Safran for spoken documents in  French language\\
@@ -190,35 +201,35 @@ Nov 2014
    \interRubrique
    \\
    
-   \begin{rubrique}[2.0cm]{\textit{ Internship}}\\
+   \begin{rubrique}[2.0cm]{\textit{ Internship} (Master Thesis)}\\
  Mar 2014 
-   & \activite{Mapping of a sound environment for a mobile robot}\\
+   & \activite{Mapping of a sound environment for a mobile robot\label{robotic}}\\
 Aug 2014 	& \lieu{LORIA\--INRIA Laboratory Nancy.}\\
-	& \bull Control of a mobile robot movements to localize a sound source as quickly as possible. The belief about the source position is represented by a discrete grid and a dynamic programming algorithm  was introduced to find the optimal robot motion minimizing the entropy of the grid.\\
+	& \bull Control of a mobile robot movements to localize a sound source as quickly as possible. The belief about the source position is represented by a discrete grid and a dynamic programming algorithm  was introduced to find the optimal robot motion minimizing the entropy of the grid\\
 	\end{rubrique} 
 \interRubrique
 \\
-\begin{rubrique}[16cm]{Publications}
- \ligne{0.1mm}
-E. Vincent, A. Sini and F. Charpillet, ``Audio source localization by optimal control of a mobile robot,`` Acoustics, Speech and Signal Processing (ICASSP), 2015 IEEE International Conference on, South Brisbane, QLD, 2015, pp. 5630-5634.
+\begin{rubrique}[16cm]{\underline{Publications}}
 \\
+ 
+(1\ref{robotic}) E. Vincent, A. Sini and F. Charpillet, ``Audio source localization by optimal control of a mobile robot,`` Acoustics, Speech and Signal Processing (ICASSP), 2015 IEEE International Conference on, South Brisbane, QLD, 2015, pp. 5630-5634.\\
+\\
+(2\ref{CALL}) Ghosh, S., Sini, A., Laprie, Y. \& Camille Fauth, C. 2016. L1-L2 interference: the case of final devoicing of French voiced fricatives in final position by German learners. To appear in Proceedings of Interspeech 2016, San Francisco. \\
 \end{rubrique}
  \interRubrique
  \\
-\begin{rubrique}[3.4cm]{Activities \& Independent Courses}\\   
-    \ligne{0.1mm}
+\begin{rubrique}[3.4cm]{\underline{Activities \& Independent Courses}}\\   
 \end{rubrique} 
-	\interRubrique
 \\
-   \begin{rubrique}[3.4cm]{\textit{ Other Activities}}\\
+\begin{rubrique}[2.0cm]{\textit{ Other Activities}}\\
 	  & \-- Data collection for IFCASL Project \\
-   	 &\-- Member of Deep Learning Discussion Group at LORIA\\
+   	 &\-- Member of Deep Learning Discussion Group at LORIA\--INRIA\\
   	 & \-- Volunteer for MRI Data Collections\\
 	 & \-- Hosted the booth for demonstration of tools in ``Village des Sciences`` at LORIA 
 \end{rubrique} 
 \interRubrique
 \\
- \begin{rubrique}[3.4cm]{\textit{ Online Certificate Courses}}\\
+ \begin{rubrique}[2.0cm]{\textit{ Online Certificate Courses}}\\
    Oct 2015 
     & \activite{Digital Signal Processing }\\
    Dec 2015& \lieu{École polytechnique fédérale de Lausanne} \comment{\textbf{taught by Prof. Paolo Prandoni \& Martin Vetterli}} \\ \\
@@ -226,20 +237,15 @@ E. Vincent, A. Sini and F. Charpillet, ``Audio source localization by optimal co
     %%%%%%
      Jan 2016 
     & \activite{Data Science Specialisation }\\
-  present  & \lieu{Johns-Hopkins University} \comment{\textbf{by Jeff Leek, Roger D. Peng \& Brian Caffo}}\\ \\
-    %%%%%%
-      Dec 2015
-   & \activite{ Machine Learning  }\\
-present& \lieu{Stanford University} \comment{\textbf{ by Andrew Ng}} \\ \\
-	\end{rubrique}
+  May 2016  & \lieu{Johns-Hopkins University} \comment{\textbf{by Jeff Leek, Roger D. Peng \& Brian Caffo}}\\ \\
+ \end{rubrique}
 	\interRubrique
 	\\
-\begin{rubrique}[3.4cm]{Computer Skills}
-   \ligne{0.1mm}
+	\begin{rubrique}[3.4cm]{\underline{Computer Skills}}
+\\	
    \textbf{Scripting} &Shell script, Windows Batch script, Jython, Python\\   \textbf{Programming} & C, C++, Java\\
    \textbf{Scientific} &  	Matlab/Octave, Theano, R\\
    \textbf{Web}&HTML, CSS, PHP, JavaScript, Ajax, JQuery\\
-   \textbf{Databases}& MySQL, PostgreSQL.\\
    \textbf{Protocols \& APIs} & XML, JSON, SOAP, REST\\
    \textbf{Tools} & Git, Ant, Maven, Vim.
 \end{rubrique}
@@ -247,19 +253,17 @@ present& \lieu{Stanford University} \comment{\textbf{ by Andrew Ng}} \\ \\
 \\
 
 
-\begin{rubrique}[21cm]{Language}
-    \ligne{0.1mm}
-	\textbf{Berber} \, (native)\,
+\begin{rubrique}[21cm]{\underline{Communication Skills}}
+\\
 	\textbf{French} \, (fluent)\,  
-	\textbf{Arabic} \, (fluent) \, 
     \textbf{English}\, (fluent), \textbf{German} \, (beginner)
     
 \end{rubrique}
 \interRubrique
 \\
-\begin{rubrique}[3.4cm]{Referees:}
- \ligne{0.1mm}
- 
+
+\begin{rubrique}[3.4cm]{\underline{References}}
+\\
 \textbf{Denis Jouvet}  & Research Director, INRIA Multispeech\\
 					& denis.jouvet@inria.fr \\
 						 
@@ -267,7 +271,5 @@ present& \lieu{Stanford University} \comment{\textbf{ by Andrew Ng}} \\ \\
 						& yves.laprie@loria.fr \\
 
 \end{rubrique} 
-\interRubrique
-
 \end{document}
 
