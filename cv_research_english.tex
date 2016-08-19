@@ -14,11 +14,11 @@
 
 \usepackage[english]{babel} 
 \usepackage[latin1]{inputenc}  % les accents dans le fichier.tex
-
+\usepackage[dvipsnames]{xcolor}
 \usepackage{vmargin} %left, top, right, bottom
 \usepackage{graphicx} % Pour insérer des images
 \usepackage{wrapfig} % Pour placer les images
-
+\usepackage{hyperref}
 \setmarginsrb{1.2cm}{1.0cm}{1.0cm}{1.2cm}{0cm}{0cm}{0cm}{0cm}
 
 \usepackage{relsize}
@@ -33,8 +33,7 @@
 \newcommand{\styleRub}[1]{\noindent\textbf{\large #1}\par}
 \newcommand{\indentStd}{\noindent\hspace{\lenA}}
 
-
-
+\colorlet{Mycolor1}{blue!70!green!90!}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Commandes Personnalisées    	  %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -126,7 +125,7 @@
    
  
 
-\begin{rubrique}[21cm]{\underline{Research Interest}}\\
+\begin{rubrique}[21cm]{\textcolor{Mycolor1}{\underline{Research Interest}}}\\
 	Speech and Language Processing, Machine learning.
 \end{rubrique}        
 \interRubrique
@@ -137,7 +136,7 @@
 % \interRubrique
  
 
-\begin{rubrique}[3.4cm]{\underline{Education}}
+\begin{rubrique}[3.4cm]{\textcolor{Mycolor1}{\underline{Education}}}
 \end{rubrique}  \\
  \begin{rubrique}[2cm]{\textit{ Academic background}}
  \\
@@ -161,7 +160,7 @@
  \interRubrique
  \\
 	\begin{rubrique}[2cm]{\textit{Summer School attended}}\\
-   Jul &\activite{Speech Synthesis Summer School }\\   
+   Jul &\activite{Speech Synthesis :Advancements in Modern Speech Synthesis Engines}\\   
    2016 &\lieu{University of Crete, Heraklion, Crete, Greece}
     \end{rubrique}  
  \interRubrique
@@ -171,21 +170,19 @@
 
 
 
-\begin{rubrique}[3.4cm]{\underline{Professional Experience}}
-\end{rubrique} 
-
+\begin{rubrique}[3.4cm]{\textcolor{Mycolor1}{\underline{Professional Experience}}}
+\end{rubrique}
+\\ 
 \begin{rubrique}[2.0cm]{\textit{As an engineer}}
-\interRubrique
- \\
- &\activite{IFCASL Project (Individualized Feedback for Computer-Assisted Spoken Language 
+\\
+ Jan 2016 present &\activite{IFCASL Project (Individualized Feedback for Computer-Assisted Spoken Language 
   Learning)} \\ 
-
-Jan 2016		 &\lieu{LORIA\--INRIA Laboratory Nancy.}\\
-present		&\--  Automatic pronounciation diagnosis and error detection for germans learning french\\	
-		 &\-- Modification and re-synthesis  of learner audio samples using teacher audio samples based on Pitch Synchronous Overlap and Add algorithm\label{CALL}\\
-		&\-- Feedback to correct devoicing of final consonants in French  spoken by German learners.\\
-		&\-- Improving speech text alignment for language learning using deep neural network, training network with TensorFlow and decoding with DL4J (IFCASL Corpus).\\ 		
-		&\-- Extraction of speech features  for pitch detection using deep neural network.\\ 
+	 &\lieu{LORIA\--INRIA Laboratory Nancy.}\\
+		&\--  Automatic pronounciation diagnosis and error detection for germans learning french\\	
+		 &\-- Modification and re-synthesis  of learner audio samples using teacher audio samples based on Pitch Synchronous Overlap and Add algorithm\\
+		&\-- Feedback to correct devoicing of final consonants in French  spoken by German learners\\
+		&\-- Improving speech text alignment for language learning using deep neural network, training network with TensorFlow and decoding with DL4J (IFCASL Corpus)\\ 		
+		&\-- Extraction of speech features  for pitch detection using deep neural network\\ 
 \\
 Jan 2016 &\activite{Lecturer in Web Programming}\\
 Mar 2016	 &\lieu{IUT Charlemagne, Université de Lorraine, Nancy}\\
@@ -199,37 +196,33 @@ Nov 2014
 	&\-- Contributing to development of JSnoori an Interactive tool for speech signal processing and phonetics
 \end{rubrique}
    \interRubrique
-   \\
    
    \begin{rubrique}[2.0cm]{\textit{ Internship} (Master Thesis)}\\
  Mar 2014 
-   & \activite{Mapping of a sound environment for a mobile robot\label{robotic}}\\
+   & \activite{Mapping of a sound environment for a mobile robot }\\
 Aug 2014 	& \lieu{LORIA\--INRIA Laboratory Nancy.}\\
-	& \bull Control of a mobile robot movements to localize a sound source as quickly as possible. The belief about the source position is represented by a discrete grid and a dynamic programming algorithm  was introduced to find the optimal robot motion minimizing the entropy of the grid\\
+	& Control of a mobile robot movements to localize a sound source as quickly as possible. The belief about the source position is represented by a discrete grid and a dynamic programming algorithm  was introduced to find the optimal robot motion minimizing the entropy of the grid .\\
 	\end{rubrique} 
 \interRubrique
+\begin{rubrique}[16cm]{\textcolor{Mycolor1}{\underline{Publications}}}
 \\
-\begin{rubrique}[16cm]{\underline{Publications}}
+(1) E. Vincent, A. Sini and F. Charpillet, ``\label{robotic}Audio source localization by optimal control of a mobile robot,`` Acoustics, Speech and Signal Processing (ICASSP), 2015 IEEE International Conference on, South Brisbane, QLD, 2015, pp. 5630-5634.\\
 \\
- 
-(1\ref{robotic}) E. Vincent, A. Sini and F. Charpillet, ``Audio source localization by optimal control of a mobile robot,`` Acoustics, Speech and Signal Processing (ICASSP), 2015 IEEE International Conference on, South Brisbane, QLD, 2015, pp. 5630-5634.\\
-\\
-(2\ref{CALL}) Ghosh, S., Sini, A., Laprie, Y. \& Camille Fauth, C. 2016. L1-L2 interference: the case of final devoicing of French voiced fricatives in final position by German learners. To appear in Proceedings of Interspeech 2016, San Francisco. \\
+(2) Ghosh, S., Sini, A., Laprie, Y. \& Camille Fauth, C. 2016. L1-L2 interference: the case of final devoicing of French voiced fricatives in final position by German learners. To appear in Proceedings of Interspeech 2016, San Francisco. \\
 \end{rubrique}
  \interRubrique
- \\
-\begin{rubrique}[3.4cm]{\underline{Activities \& Independent Courses}}\\   
+ 
+\begin{rubrique}[3.4cm]{\textcolor{Mycolor1}{\underline{Activities \& Independent Courses}}}\\   
 \end{rubrique} 
 \\
-\begin{rubrique}[2.0cm]{\textit{ Other Activities}}\\
+\begin{rubrique}[3.4cm]{\textit{ Other Activities}}\\
 	  & \-- Data collection for IFCASL Project \\
    	 &\-- Member of Deep Learning Discussion Group at LORIA\--INRIA\\
   	 & \-- Volunteer for MRI Data Collections\\
 	 & \-- Hosted the booth for demonstration of tools in ``Village des Sciences`` at LORIA 
 \end{rubrique} 
 \interRubrique
-\\
- \begin{rubrique}[2.0cm]{\textit{ Online Certificate Courses}}\\
+ \begin{rubrique}[3.4cm]{\textit{ Online Certificate Courses}}\\
    Oct 2015 
     & \activite{Digital Signal Processing }\\
    Dec 2015& \lieu{École polytechnique fédérale de Lausanne} \comment{\textbf{taught by Prof. Paolo Prandoni \& Martin Vetterli}} \\ \\
@@ -240,29 +233,27 @@ Aug 2014 	& \lieu{LORIA\--INRIA Laboratory Nancy.}\\
   May 2016  & \lieu{Johns-Hopkins University} \comment{\textbf{by Jeff Leek, Roger D. Peng \& Brian Caffo}}\\ \\
  \end{rubrique}
 	\interRubrique
-	\\
-	\begin{rubrique}[3.4cm]{\underline{Computer Skills}}
-\\	
-   \textbf{Scripting} &Shell script, Windows Batch script, Jython, Python\\   \textbf{Programming} & C, C++, Java\\
-   \textbf{Scientific} &  	Matlab/Octave, Theano, R\\
-   \textbf{Web}&HTML, CSS, PHP, JavaScript, Ajax, JQuery\\
-   \textbf{Protocols \& APIs} & XML, JSON, SOAP, REST\\
-   \textbf{Tools} & Git, Ant, Maven, Vim.
+	\begin{rubrique}[3.4cm]{\textcolor{Mycolor1}{\underline{Computer Skills}}}\\
+     \textbf{Programming} & C, C++, Java, Shell script, Jython, Python\\ \\
+   \textbf{Scientific tools} &  	Matlab/Octave, TensorFlow, R\\ \\
+   \textbf{Web}&HTML, CSS, JavaScript, Ajax, JQuery, REST\\ \\
+   \textbf{Data structure} & XML, JSON\\ \\
+
 \end{rubrique}
 \interRubrique
 \\
 
 
-\begin{rubrique}[21cm]{\underline{Communication Skills}}
+\begin{rubrique}[3.4cm]{\textcolor{Mycolor1}{\underline{Communication Skills}}}
 \\
-	\textbf{French} \, (fluent)\,  
-    \textbf{English}\, (fluent), \textbf{German} \, (beginner)
+	\textbf{French} & Fluent \\ 
+    \textbf{English}& Fluent \\
     
 \end{rubrique}
 \interRubrique
 \\
 
-\begin{rubrique}[3.4cm]{\underline{References}}
+\begin{rubrique}[3.4cm]{\textcolor{Mycolor1}{\underline{References}}}
 \\
 \textbf{Denis Jouvet}  & Research Director, INRIA Multispeech\\
 					& denis.jouvet@inria.fr \\
