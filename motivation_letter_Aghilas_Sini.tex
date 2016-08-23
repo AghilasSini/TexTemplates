@@ -1,0 +1,53 @@
+%\title{Example letter using the newlfm LaTeX package}
+%
+% See http://texblog.org/2013/11/11/latexs-alternative-letter-class-newlfm/
+% and http://www.ctan.org/tex-archive/macros/latex/contrib/newlfm
+% for more information.
+%
+\documentclass[12pt,stdletter,orderfromtodate,sigleft]{newlfm}
+\usepackage{blindtext, xfrac}
+ 
+\newlfmP{dateskipbefore=50pt}
+\newlfmP{sigsize=50pt}
+\newlfmP{sigskipbefore=50pt}
+ 
+\newlfmP{Headlinewd=0pt,Footlinewd=0pt}
+ 
+\namefrom{Aghilas Sini}
+\addrfrom{%
+Aghilas Sini\\
+    INRIA, 615 Rue du Jardin botanique\\ 54600 Villers-l\`{e}s-Nancy\\France
+}
+ 
+\addrto{%
+   Prof. Élisabeth Delais\--Roussarie \\ LLF, CNRS \-- UMR 7110\\ Université Paris Diderot-Paris 7\\
+Case 7031 \-- 5, rue Thomas Mann,75205 Paris cedex 13\\ 
+\\
+Prof. Damien Lolive\\ ENSSAT (University of Rennes 1)\\ IRISA (Team Expression) \\
+6, rue de Kerampont\\
+22300 Lannion\\
+France\\
+}
+ 
+\dateset{\today}
+ 
+\greetto{Dear Prof. Delais\--Roussarie and Prof. Lolive,}
+ 
+\closeline{Sincerely,}
+ 
+\begin{document}
+\begin{newlfm}
+I am writing to express my interest in the open PhD position titled ``Characterisation  and  generation  of  expressivity  in  function  of  speaking  styles  for  audiobook 
+synthesis``. I am currently a research engineer with the Multispeech team, at LORIA-INRIA laboratory Nancy, France, where I am pursuing my interest in automatic language and speech processing for the past two years. I am submiting this letter of application for the PhD position, you are proposing, and I believe that my experience so far and my quest for knowledge make me qualify to meet the needs of the program. 
+		
+At LORIA-INRIA, I have been working in the area of Computer-Assisted Spoken Language Learning to assist German speakers to learn French. My contribution is towards both the speech signal processing and machine learning aspects. It includes speech feature extraction, speech modification and dynamic programing. In addition, we aim at detecting errors due to the interference between the first and the second languages of the learner and assist him to correct by providing audio feedback synthesised using TD\--PSOLA. This work will be presented at Interspeech 2016 \footnote{S. Ghosh, A. Sini, Y. Laprie and C. Fauth,  2016. L1-L2 interference: the case of final devoicing of French voiced fricatives in final position by German learners. To appear in Proceedings of Interspeech 2016, San Francisco.}. Recently, I attended lectures on modern speech synthesis engines which gave me a wild overview of the area and its challenges. My master's internship with Emmanuel Vincent and François Charpillet explored audio source localisation by mobile robot. As a result of this thesis, a novel approach based on grid occupancy was proposed. This work was published in IEEE ICASSP 2015 Conference\footnote{E. Vincent, A. Sini and F. Charpillet, ``Audio source localization by optimal control of a mobile robot,`` Acoustics, Speech and Signal Processing (ICASSP), 2015 IEEE International Conference on, South Brisbane, QLD, 2015, pp. 5630-5634.}. These experiences enhanced my research skills and exposure. My MSc courses on signal processing, pattern recognition and machine learning laid the foundation of these skills.   
+
+		
+While contributing to the development of open source speech tools/softwares such as JSnoori, JTrans and JSafran tools at LORIA-INRIA, I gained expertise in different programming languages like C/C++, Java, Python and JavaScript. At the same time, I gained a valuable experience in implementing  various speech signal processing algorithms and got well acquainted 	to cluster computing environment	and tools for coding within the team project. Recently, I was introduced to festival frameworks for text\--to\--speech synthesis and TensorFlow for the implementation of deep learning architectures. Similarly, during my MSc internship, I worked with Kinect based robot audio acquisition. These allowed to improve my ability to easily adapt to new research and development environments.    
+
+ The above experiences have made me well aware of the challenges of the research. As an individual, I also got the opportunity to develop my communication skills and team. Indeed, working on multi-disciplinary projects involved coordination within  team as well as collaboration with other teams. 
+
+I am confident that my skills and experience will enable me to contribute well  in  your project. Looking forward to discuss with you in this regard.
+
+\end{newlfm}
+\end{document}
