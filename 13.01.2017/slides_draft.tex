@@ -1,0 +1,254 @@
+\documentclass{beamer}
+
+% Choose how your presentation looks.
+%
+% For more themes, color themes and font themes, see:
+% http://deic.uab.es/~iblanes/beamer_gallery/index_by_theme.html
+%
+\mode<presentation>
+{
+  \usetheme{Darmstadt}      % or try Darmstadt, Madrid, Warsaw, ...
+  \usecolortheme{beaver} % or try albatross, beaver, crane, ...
+  \usefonttheme{serif}  % or try serif, structurebold, ...
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{caption}[numbered]
+} 
+
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\title[Background and Literature]{Characterisation of  expressivity  in  function  of  speaking  styles  for  audiobook
+synthesis }
+\author{Aghilas Sini}
+\institute{Université de Rennes 1}
+\date{13/01/2017}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+%
+%% Uncomment these lines for an automatically generated outline.
+%%\begin{frame}{Outline}
+%%  \tableofcontents
+%%\end{frame}
+%
+%\section{Problem}
+%\begin{frame}{Test and Compare Current Literature of MB Water}
+%\begin{itemize}
+%  \item Run simulations with 2D and 3D MB water to compare with current research 
+%  \item Compare to four state modified Muller Model used in Silverstein study \footnotemark[1]
+%  \item Uses 4 physical states of bulk and shell water molecules surrounding a water molecule or nonpolar solvent.
+%  \item Possible theoretical phase diagram to exhibit nteresting properties such as $_{(l)}\rightarrow_{(s)}$ transition with increasing pressure.
+%
+%  \footnotetext[1]{\tiny{Silverstein, K. A. T.; Haymet, A. J. D.; Dill, K. A. Molecular Model of Hydrophobic Solvation J. Chem. Phys. \textbf{1999}, 111(17), 8000-8009}} 
+%\end{itemize}
+%\end{frame}
+%
+%\section{Corpus}
+%\begin{frame}{Corpus NEB}
+%	
+%\end{frame}
+%
+%\section{Background}
+%
+%\begin{frame}{Why Study $H{_2}O$?}
+%\begin{itemize}
+%  \item Water has many unusual features including high heat capacity ($C_p$), the hydrophobic effect, density anomalies (i.e. $d_{(s)}>d_{(l)}$ below $3.984^{o}$C), isothermal compressability, etc.
+%  \item Understanding of water leads to understanding of many other natural processes (e.g. Limitations in predicting protein structures and drug interatictions and are due to our understanding of water \footnotemark[1])
+%  \item Importance in essentially all of science - wet chem, biologoy/biochem, environmental chem, $\cdots$
+%  \footnotetext[1]{\tiny{Dill, K. A.; Truskett, T. M.; Vlachy, V.; Hribar-Lee, B. Modeling Water, The Hydrophobic Effect, \& Ion Solvation Annu. Rev. Biophys. Biomol. Struct. \textbf{2005}, 34, 179-199}}
+%\end{itemize}
+%\end{frame}
+%
+%
+%\begin{frame}{Mercedes Benz Water}
+%
+%\begin{itemize}
+%  \item \small Simplified 2D model of water consisting of 2 bonds for each hydrogen and a bond combining 2 lone electron pairs.
+%  \item \small Interactions determined by angle, $\theta$, by which "branches" are in relation to one another as well as Lennard-Jones Interactions. 
+%  \item \small Resembles Mercedes Benz logo
+%
+%  \item \small Used for qualitative analyses of odd properties of water
+%  \item \small Model is used in both Monte Carlo (MC) and Molecular Dynamics (MD) simulations.
+%\end{itemize}
+%
+%\vskip 1cm
+%\end{frame}
+%
+%\begin{frame}{Monte Carlo Simulations}
+%
+%\begin{center}
+%	\begin{itemize}
+%  \item \small Statistical method based on Metropolis-Hastings Algorithm.
+%  \item \small Based on total energy of the system. If $E_T$ decreases, move is accepted. If not, move may or may not be accepted depending on amount of increase of energy.
+%  \item $E_T=K_T+U_T$. 
+%  \item \small System is allowed to equilibrate over many moves and properties of system can be extracted from that.
+%  \end{itemize}
+%\end{center}  
+%\end{frame}
+%
+%
+%\begin{frame}{Molecular Dynamics Simulations}
+%\begin{itemize}
+%  \item A given molecule is selected, all forces acting on it are calculated, then the next position it would be located in is determined. This process is repeated. (Applied to all atoms in a system)
+%  \item Becomes very complicated very quickly including many complex partial derivatives and multiple integrals.  
+%  \item Monte Carlo simulations tend to be preferred for this reason.
+%\end{itemize}
+%\end{frame}
+%
+%\begin{frame}{Does the Model Fit Reality?}
+%\begin{itemize}
+%  \item Goal is not to make a realistic model, but rather, to simulate properties of water that we want to study.
+%  \item Simulations have shown MB water to display the density anomaly, minimum isothermal compressibility, large heat capacity, and solvation trends for both ionic and non-polar compounds. \footnotemark[1]
+%  \item Good for qualitative properties, but does not hold as well for quantitative results
+%\footnotetext[1]{Urbica, T.; Vlacy, V.; Kalyuzhnyi, Y. V.; Dill, K. A. An Imporoved Thermodynamic Peterbation Theory for Mercedes-Benz Water J. Chem. Phy. \textbf{2007}, 127, 1-4}
+%\end{itemize}
+%\end{frame}
+%
+%
+%\section{Applications to Science}
+%\begin{frame}{Scientific Applications}
+%\begin{itemize}
+%  \item Test reproducibility of published articles.
+%  \item Provide teaching resources.
+%  \item Produce comparisons of MD and MC simulations in ability to simulate $H_{2}O$ computationally.
+%\end{itemize}
+%\end{frame}
+%
+%% Commands to include a figure:
+%%\begin{figure}
+%%\includegraphics[width=\textwidth]{your-figure's-file-name}
+%%\caption{\label{fig:your-figure}Caption goes here.}
+%%\end{figure}
+%
+%
+%\section{Acknowledgments}
+%\subsection{Acknowledgments}
+%\begin{frame}{Acknowledgements}
+%\begin{itemize}
+%  \item Dr. Madura
+%  \item Riley Workman
+%  \item Matthew Srnec
+%  \item Kendy Pellegrene
+%  \item Shiv\footnotemark[1]
+%  \footnotetext[1]{\tiny Sorry, Shiv, I couldn't find a folder with your last name on it.}
+%\end{itemize}
+%\end{frame}
+
+
+\section{Problems}
+
+\begin{frame}{Overview}
+\Large The presentation is organized as follows:
+\begin{itemize}
+  \item \Large Survey of the key problems to be addressed (Image Processing and Vision)
+  %\item Use \texttt{itemize} to organize your main points.
+  \item \Large Related work and literature review
+  \item \Large Future scope of work
+\end{itemize}
+
+\vskip 1cm
+
+%\begin{block}{Examples}
+%Some examples of commonly used commands and features are included, to help you get started.
+%\end{block}
+
+\end{frame}
+
+\subsection{Key Problems In Text Processing and Speech Processing}
+
+\begin{frame}{Key Problems In Text Processing}
+
+\begin{itemize}
+\item Neuro-Endotrainer tracking and evaluation
+\item Neuro-endoscopy tool tracking(Aux camera and Endoscopy camera)
+\item  Micro-suturing skills assessment - effectiveness(images) and Dexterity(video - activity detection and scoring)
+\item Drilling Skill assessment effectiveness(images) and Dexterity(video - activity detection)
+\end{itemize}
+
+% Commands to include a figure:
+%\begin{figure}
+%\includegraphics[width=\textwidth]{your-figure's-file-name}
+%\caption{\label{fig:your-figure}Caption goes here.}
+%\end{figure}
+
+\end{frame}
+
+\begin{frame}{Key Problems In Speech Processing}
+\end{frame}
+
+\section{Related Word}
+\subsection{Related Work - I}
+\begin{frame}{Related Work and Literature review - I}
+\Large The main focus so far has been only the Neuro-endotrainer
+\begin{itemize}
+\item It started with building background on Image Processing and Computer Vision:
+\begin{itemize}
+\item \large Notes on DIA - Basics of image representation, filtering operations, Image Warping
+\item \large Mooc on Udacity - Math behind Canny Edge detection and Hough Transform
+\item \large Another Mooc on CV - just specific topics from that made me comfortable with the math. - eg: SIFT descriptor etc
+\item \large Notes on CV that led me to study the math behind
+projective geometry - mainly Hartley and Zisserman
+\item \large Getting used to coding in openCV
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\subsection{Related Work - II}
+\begin{frame}{Related Work and Literature review - II}
+\begin{itemize}
+\item \Large Secondly, the requirements of the project - The evaluation of the task of picking the ring is addressed by detecting whether the board is hit or not.Its a failure when board is hit- \textbf{Foreground Detection - MOG} and \textbf{TLD}
+\item Tracking ring's motion - To automate whether a ring is being picked and moved, stationary. - \textbf{Activity Identification}
+\end{itemize}
+\end{frame}
+
+\subsection{Future scope of work}
+
+\begin{frame}{Suggested problems to work on}
+\Large Currently the following problems are to be addressed
+\begin{itemize}
+\item Endotrainer related:
+\begin{itemize}
+\item \Large Identify tugging of the ring onto a peg.
+\item \Large  Endoscopic Camera Evaluation - The tool is to be tracked and determined whether the tool is in the centre of the field or exiting the field and evaluate if it hits the peg.
+\end{itemize}
+
+\item Micro-suturing related (Image and Video)
+\item Drill related (Image and Video)
+\end{itemize}
+\end{frame}
+\begin{frame}
+\centering \LARGE THANKYOU
+\end{frame}
+
+\subsection{References}
+\begin{frame}{References}
+\begin{itemize}
+  \item Dill, K. A.; Truskett, T. M.; Vlachy, V.; Hribar-Lee, B. Modeling Water, The Hydrophobic Effect, \& Ion Solvation Annu. Rev. Biophys. Biomol. Struct. \textbf{2005}, 34, 179-199
+  \item Silverstein, K. A. T.; Haymet, A. J. D.; Dill, K. A. The Strength of Hydrogen Bonds in Liquid Water and Around Nonpolar SOlutes J. Am. Chem. Soc. \textbf{2000}, 122, 8037-8041
+  \item Silverstein, K. A. T.; Haymet, A. J. D.; Dill, K. A. A Simple Model of Water and the Hydrophobic Effect J. Am. Chem. Soc. \textbf{1998}, 120, 3166-3175
+\end{itemize}
+\end{frame}
+
+\begin{frame}{References (Continued)}
+\begin{itemize}
+  \item Urbica, T.; Vlacy, V.; Kalyuzhnyi, Y. V.; Dill, K. A. An Imporoved Thermodynamic Peterbation Theory for Mercedes-Benz Water J. Chem. Phy. \textbf{2007}, 127, 1-4
+  \item Silverstein, K. A. T.; Haymet, A. J. D.; Dill, K. A. Molecular Model of Hydrophobic Solvation J. Chem. Phys. \textbf{1999}, 111(17), 8000-8009 
+\end{itemize}
+\end{frame}
+
+\section{Summary}
+\begin{frame}{Questions?}
+\begin{itemize}
+  \item Study MB water to understand peculiar properties it possesses.
+  \item Running various simulations to test MB water and Monte Carlo/Molecular Dynamics simulation methods.
+  \item Testing results from previously published journals.
+  \item Research can be used as a teaching resource and source of information for scientific community.
+\end{itemize}
+\end{frame}
+
+
+
+\end{document}

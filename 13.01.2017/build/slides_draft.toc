@@ -1,0 +1,10 @@
+\beamer@endinputifotherversion {3.36pt}
+\select@language {english}
+\beamer@sectionintoc {1}{Mid-Semester Project Presentation}{2}{0}{1}
+\beamer@subsectionintoc {1}{1}{Key Problems In Text Processing and Speech Processing}{3}{0}{1}
+\beamer@sectionintoc {2}{Related Word}{5}{0}{2}
+\beamer@subsectionintoc {2}{1}{Related Work - I}{5}{0}{2}
+\beamer@subsectionintoc {2}{2}{Related Work - II}{6}{0}{2}
+\beamer@subsectionintoc {2}{3}{Future scope of work}{7}{0}{2}
+\beamer@subsectionintoc {2}{4}{References}{9}{0}{2}
+\beamer@sectionintoc {3}{Summary}{11}{0}{3}
