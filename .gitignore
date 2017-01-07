@@ -1,9 +1,9 @@
 /*
-!/*.pdf
-!/*.tex
-!/*.cls
-!/*.sty
+
 !/.gitignore
-!/interview
-!/13.01.2017
-!/myphd
+!/as*
+!/images
+!/*.md	
+
+
+
