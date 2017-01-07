@@ -1,0 +1,12 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\contentsline {chapter}{Declaration of Authorship}{iii}{section*.1}
+\contentsline {chapter}{Abstract}{vii}{section*.2}
+\contentsline {chapter}{Acknowledgements}{ix}{section*.3}
+\contentsline {chapter}{\numberline {1}State of the Art}{1}{chapter.14}
+\contentsline {section}{\numberline {1.1}Expressive Speech Synthesis}{1}{section.15}
+\contentsline {subsection}{\numberline {1.1.1}Subsection 1}{1}{subsection.16}
+\contentsline {subsection}{\numberline {1.1.2}Subsection 2}{1}{subsection.17}
+\contentsline {section}{\numberline {1.2}Main Section 2}{1}{section.18}
+\contentsline {chapter}{Bibliography}{3}{appendix*.19}

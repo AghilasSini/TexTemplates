@@ -1,0 +1,66 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
+The style file: biblatex.bst
+A level-1 auxiliary file: Chapters/Chapter01.aux
+A level-1 auxiliary file: Chapters/Chapter02.aux
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: main-blx.bib
+Database file #2: example.bib
+Warning--I'm ignoring AnneCatherine2010PhoneStyle's extra "year" field
+--line 24 of file example.bib
+Biblatex version: 3.3
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+You've used 10 entries,
+            6047 wiz_defined-function locations,
+            1206 strings with 11240 characters,
+and the built_in function-call counts, 35604 in all, are:
+= -- 1593
+> -- 1280
+< -- 447
++ -- 498
+- -- 457
+* -- 2564
+:= -- 2186
+add.period$ -- 0
+call.type$ -- 10
+change.case$ -- 267
+chr.to.int$ -- 53
+cite$ -- 18
+duplicate$ -- 3769
+empty$ -- 3489
+format.name$ -- 648
+if$ -- 8251
+int.to.chr$ -- 0
+int.to.str$ -- 24
+missing$ -- 0
+newline$ -- 286
+num.names$ -- 555
+pop$ -- 2963
+preamble$ -- 1
+purify$ -- 296
+quote$ -- 0
+skip$ -- 2181
+stack$ -- 0
+substring$ -- 1241
+swap$ -- 1342
+text.length$ -- 302
+text.prefix$ -- 11
+top$ -- 1
+type$ -- 363
+warning$ -- 0
+while$ -- 233
+width$ -- 0
+write$ -- 275
+(There was 1 warning)
