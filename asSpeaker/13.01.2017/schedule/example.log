@@ -1,0 +1,179 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2016.12.29)  11 JAN 2017 08:17
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**example.tex
+(./example.tex
+LaTeX2e <2016/03/31>
+Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (./schedule.sty
+File: schedule.dtx 
+Package: schedule 
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count87
+\calc@Bcount=\count88
+\calc@Adimen=\dimen103
+\calc@Bdimen=\dimen104
+\calc@Askip=\skip43
+\calc@Bskip=\skip44
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count89
+\calc@Cskip=\skip45
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/05/09 v1.1c Standard LaTeX Color (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 144.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count90
+))
+\cell@height=\skip46
+\cell@width=\skip47
+\box@depth=\skip48
+\c@sch@col@width=\count91
+\box@width=\skip49
+\col@width=\skip50
+\sch@depth=\skip51
+\fill@length=\skip52
+\@temp@length=\skip53
+\@@temp@length=\skip54
+\line@thickness=\skip55
+\adjusted@cell@width=\skip56
+\adjusted@cell@height=\skip57
+\c@picture@units@wide=\count92
+\c@xcoords=\count93
+\c@ycoords=\count94
+\c@timea=\count95
+\c@timeb=\count96
+\c@grid@width=\count97
+\c@grid@height=\count98
+\c@number@of@cells=\count99
+\c@number@of@subcells=\count100
+\c@number@of@days=\count101
+\c@dp@vlines=\count102
+\c@dp@hlines=\count103
+\c@dp@hcell@lines=\count104
+\c@pu@cell@width=\count105
+\c@pu@cell@height=\count106
+\c@pu@grid@top=\count107
+\c@pu@grid@width=\count108
+\c@pu@subticks=\count109
+\c@start@time=\count110
+\c@end@time=\count111
+\c@x@coord=\count112
+\c@y@coord=\count113
+\c@@tempc=\count114
+\c@@tempd=\count115
+\c@label@sep=\count116
+\c@x@Sunday=\count117
+\c@x@Monday=\count118
+\c@x@Tuesday=\count119
+\c@x@Wednesday=\count120
+\c@x@Thursday=\count121
+\c@x@Friday=\count122
+\c@x@Saturday=\count123
+\temp@box=\box26
+\@i=\count124
+\@j=\count125
+\c@ycoords@bot=\count126
+\c@x@tempa=\count127
+\c@x@tempb=\count128
+\c@y@tempa=\count129
+\c@y@tempb=\count130
+\c@temp@cnt@a=\count131
+\title@height=\skip58
+\label@height=\skip59
+\c@pu@label@width=\count132
+\center@hack=\skip60
+)
+No file example.aux.
+\openout1 = `example.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count133
+\scratchdimen=\dimen105
+\scratchbox=\box27
+\nofMPsegments=\count134
+\nofMParguments=\count135
+\everyMPshowfont=\toks14
+\MPscratchCnt=\count136
+\MPscratchDim=\dimen106
+\MPnumerator=\count137
+\makeMPintoPDFobject=\count138
+\everyMPtoPDFconversion=\toks15
+)
+Underfull \hbox (badness 10000) in paragraph at lines 33--33
+[]\OT1/cmr/m/n/6 Realism/Antireal-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--36
+[]\OT1/cmr/m/n/6 Departmental
+ []
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./example.aux) ) 
+Here is how much of TeX's memory you used:
+ 1315 strings out of 493014
+ 16857 string characters out of 6135689
+ 82149 words of memory out of 5000000
+ 4912 multiletter control sequences out of 15000+600000
+ 4836 words of font info for 18 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 27i,7n,32p,228b,233s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb>
+Output written on example.pdf (1 page, 41791 bytes).
+PDF statistics:
+ 20 PDF objects out of 1000 (max. 8388607)
+ 13 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

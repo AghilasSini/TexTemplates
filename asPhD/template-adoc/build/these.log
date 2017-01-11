@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2016.12.29)  7 JAN 2017 17:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2016.12.29)  9 JAN 2017 17:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -521,7 +521,7 @@ Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
 
 
 Writing index file these.idx
-No file these.aux.
+(build/these.aux)
 \openout1 = `these.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
@@ -538,7 +538,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 64.
 LaTeX Font Info:    ... okay on input line 64.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 64.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 64.
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 64.
@@ -636,15 +636,12 @@ Package epstopdf Info: Source file: <rennes1.eps>
 (epstopdf)                    date: 2010-05-06 12:15:23
 (epstopdf)                    size: 25482 bytes
 (epstopdf)             Output file: <rennes1-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-01-07 17:51:50
+(epstopdf)                    size: 11115 bytes
 (epstopdf)             Command: <repstopdf --outfile=rennes1-eps-converted-to.p
 df rennes1.eps>
 (epstopdf)             \includegraphics on input line 98.
-runsystem(repstopdf --outfile=rennes1-eps-converted-to.pdf rennes1.eps)...execu
-ted safely (allowed).
-
-Package epstopdf Info: Result file: <rennes1-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-01-07 17:51:50
-(epstopdf)                    size: 11115 bytes.
+Package epstopdf Info: Output file is already uptodate.
 <rennes1-eps-converted-to.pdf, id=1, 335.2525pt x 113.42375pt>
 File: rennes1-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -655,15 +652,12 @@ Package epstopdf Info: Source file: <ueb.eps>
 (epstopdf)                    date: 2010-05-06 13:28:11
 (epstopdf)                    size: 6492 bytes
 (epstopdf)             Output file: <ueb-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-01-07 17:51:51
+(epstopdf)                    size: 4260 bytes
 (epstopdf)             Command: <repstopdf --outfile=ueb-eps-converted-to.pdf u
 eb.eps>
 (epstopdf)             \includegraphics on input line 98.
-runsystem(repstopdf --outfile=ueb-eps-converted-to.pdf ueb.eps)...executed safe
-ly (allowed).
-
-Package epstopdf Info: Result file: <ueb-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-01-07 17:51:51
-(epstopdf)                    size: 4260 bytes.
+Package epstopdf Info: Output file is already uptodate.
 
 <ueb-eps-converted-to.pdf, id=2, 305.14pt x 229.85875pt>
 File: ueb-eps-converted-to.pdf Graphic file (type pdf)
@@ -750,12 +744,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 126--126
 
  []
 
-[0] [0]
-No file these.toc.
+[0] [0] (build/these.toc
+
+LaTeX Font Warning: Font shape `T1/cms/bx/n' undefined
+(Font)              using `T1/cmr/m/n' instead on input line 2.
+
+)
 \tf@toc=\write5
 \openout5 = `these.toc'.
 
-(./introduction/introduction.tex [1
+ (./introduction/introduction.tex [1
 
 ] [2
 
@@ -771,24 +769,17 @@ Chapitre 1.
 
 LaTeX Warning: Citation `ADOC2004' on page 5 undefined on input line 9.
 
-
-LaTeX Warning: Reference `fig:mafigure1' on page 5 undefined on input line 12.
-
 Package epstopdf Info: Source file: <chapitre1/fig/mafigure.eps>
 (epstopdf)                    date: 2004-09-16 09:28:49
 (epstopdf)                    size: 8410 bytes
 (epstopdf)             Output file: <chapitre1/fig/mafigure-eps-converted-to.pd
 f>
+(epstopdf)                    date: 2017-01-07 17:51:51
+(epstopdf)                    size: 6636 bytes
 (epstopdf)             Command: <repstopdf --outfile=chapitre1/fig/mafigure-eps
 -converted-to.pdf chapitre1/fig/mafigure.eps>
 (epstopdf)             \includegraphics on input line 17.
-runsystem(repstopdf --outfile=chapitre1/fig/mafigure-eps-converted-to.pdf chapi
-tre1/fig/mafigure.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <chapitre1/fig/mafigure-eps-converted-to.pd
-f>
-(epstopdf)                    date: 2017-01-07 17:51:51
-(epstopdf)                    size: 6636 bytes.
+Package epstopdf Info: Output file is already uptodate.
 
 <chapitre1/fig/mafigure-eps-converted-to.pdf, id=49, 251.94125pt x 175.65625pt>
 File: chapitre1/fig/mafigure-eps-converted-to.pdf Graphic file (type pdf)
@@ -801,24 +792,17 @@ put line 17.
 
 ]
 Chapitre 2.
-
-LaTeX Warning: Reference `fig:mafigure2' on page 7 undefined on input line 9.
-
 Package epstopdf Info: Source file: <chapitre2/fig/mafigure.eps>
 (epstopdf)                    date: 2004-09-16 09:28:49
 (epstopdf)                    size: 7214 bytes
 (epstopdf)             Output file: <chapitre2/fig/mafigure-eps-converted-to.pd
 f>
+(epstopdf)                    date: 2017-01-07 17:51:51
+(epstopdf)                    size: 3296 bytes
 (epstopdf)             Command: <repstopdf --outfile=chapitre2/fig/mafigure-eps
 -converted-to.pdf chapitre2/fig/mafigure.eps>
 (epstopdf)             \includegraphics on input line 14.
-runsystem(repstopdf --outfile=chapitre2/fig/mafigure-eps-converted-to.pdf chapi
-tre2/fig/mafigure.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <chapitre2/fig/mafigure-eps-converted-to.pd
-f>
-(epstopdf)                    date: 2017-01-07 17:51:51
-(epstopdf)                    size: 3296 bytes.
+Package epstopdf Info: Output file is already uptodate.
 
 <chapitre2/fig/mafigure-eps-converted-to.pdf, id=64, 544.0325pt x 344.28625pt>
 File: chapitre2/fig/mafigure-eps-converted-to.pdf Graphic file (type pdf)
@@ -832,24 +816,17 @@ put line 14.
 
 ]
 Chapitre 3.
-
-LaTeX Warning: Reference `fig:mafigure3' on page 9 undefined on input line 7.
-
 Package epstopdf Info: Source file: <chapitre3/fig/mafigure.eps>
 (epstopdf)                    date: 2004-09-16 09:28:50
 (epstopdf)                    size: 7214 bytes
 (epstopdf)             Output file: <chapitre3/fig/mafigure-eps-converted-to.pd
 f>
+(epstopdf)                    date: 2017-01-07 17:51:51
+(epstopdf)                    size: 3296 bytes
 (epstopdf)             Command: <repstopdf --outfile=chapitre3/fig/mafigure-eps
 -converted-to.pdf chapitre3/fig/mafigure.eps>
 (epstopdf)             \includegraphics on input line 12.
-runsystem(repstopdf --outfile=chapitre3/fig/mafigure-eps-converted-to.pdf chapi
-tre3/fig/mafigure.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <chapitre3/fig/mafigure-eps-converted-to.pd
-f>
-(epstopdf)                    date: 2017-01-07 17:51:51
-(epstopdf)                    size: 3296 bytes.
+Package epstopdf Info: Output file is already uptodate.
 
 <chapitre3/fig/mafigure-eps-converted-to.pdf, id=74, 544.0325pt x 344.28625pt>
 File: chapitre3/fig/mafigure-eps-converted-to.pdf Graphic file (type pdf)
@@ -868,29 +845,26 @@ f>] [10
 No file these.bbl.
 [13] [14
 
-]
-No file these.lof.
+] (build/these.lof)
 \tf@lof=\write6
 \openout6 = `these.lof'.
 
-[15
+ [15
 
-] [16] [17] (./resume/resume.tex) [18] (build/these.aux)
+] [16] [17] (./resume/resume.tex) [18]
+(build/these.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 8176 strings out of 493014
- 105931 string characters out of 6135689
- 220586 words of memory out of 5000000
- 11440 multiletter control sequences out of 15000+600000
+ 8184 strings out of 493014
+ 106049 string characters out of 6135689
+ 220616 words of memory out of 5000000
+ 11442 multiletter control sequences out of 15000+600000
  58372 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,13n,30p,3333b,439s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -905,7 +879,7 @@ hare/texmf/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf/fonts/typ
 e1/public/cm-super/sfsl1095.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhv
 r8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on build/these.pdf (24 pages, 183187 bytes).
+Output written on build/these.pdf (24 pages, 183666 bytes).
 PDF statistics:
  150 PDF objects out of 1000 (max. 8388607)
  104 compressed objects within 2 object streams

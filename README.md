@@ -9,14 +9,14 @@ It's orginise as series of directory 'as...',
 	*	Contains all the images.
 
 ## asCandidate
-	*	Contains all my interviews presentation, my cv and my covers letter
+	*	Contains all my interviews presentation, my cv and my covers letter.
 ## asEngineer  
 	*	Documentations that I wrote as engineer in LORIA.	
 ## asMSc 
-	*	Master Thesis
+	*	Master Thesis.
 ## asPhD 
-	*	PhD Thesis
+	*	PhD Thesis.
 ## asSpeaker 
-	*	Slides And Presentation
+	*	Slides And Presentation.
 ## asTutorial
 	*	Summeries of the tutorials, that I assigned to it.
