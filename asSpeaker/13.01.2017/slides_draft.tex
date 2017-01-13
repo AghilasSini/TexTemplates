@@ -16,7 +16,7 @@
 
 \usepackage[english]{babel}
 \usepackage[utf8x]{inputenc}
-\title[Background and Literature]{Data Annotation And Prosody Prediction In TTS}
+\title[Background and Literature]{Enhance Speech Text Alignment For Prosody Modeling And Prediction In TTS}
 \author{Aghilas Sini}
 \institute{Université de Rennes 1}
 \date{13/01/2017}
@@ -41,100 +41,99 @@
 
 
 
-\section{Problem}
+\section{Speech To Text Alignment}
 %============================================================%
 %
 %============================================================%
 \subsection{Overview}
-\begin{frame}{Overview}
+\begin{frame}{Forced Alignment}
 
-\end{frame}
+\begin{figure}[!h]
+\begin{center}
 
-%============================================================%
-%
-%============================================================%
-\section{Data Annotation}
-\begin{frame}{Data Annotation}
+   \includegraphics[scale=0.38]{/home/asini/Workspace/TexTemplates/asImages/forced_alignment.png}
+\caption{Forced Alignment System}
+\end{center}
 
-
-\end{frame}
-%============================================================%
-%
-%============================================================%
-\subsection{NEB Corpus}
-\begin{frame}
-
-\end{frame}
-%============================================================%
-%
-%============================================================%
-\section{Prosody Prediction}
-\begin{frame}{Prosody Prediction}
+\end{figure}
+	
+	
+	
 	
 \end{frame}
 %============================================================%
 %
 %============================================================%
-\begin{frame}
+\subsection{Adapting The Default Acoustic Model}
+\begin{frame}{Why?}
+	\begin{itemize}
+		\item Adapt data properties (words, phonemes ... )
+		\item Voice characteristics.
+		\item Take account recording environment (robustness)
+		\item Accurate boundaries (words, silences ... )
+	\end{itemize}
 
 \end{frame}
 
-\subsection{Key Problems In Text Processing and Speech Processing}
+%============================================================%
+%
+%============================================================%
+\subsection{Problems In Text Processing }
+\begin{frame}{Text Pre-processing(Classical Problems)}
+	Since the texts are  too long
+		\begin{itemize}
+			\item sentence end detection (choice should be done..)
+			\item Dealing with abbreviations.
+			\item Recognizing Acronyms and URLs.
+			\item Processing numbers
+			\item Dealing with idioms and proper name.
+		\end{itemize}
+	 Note : I'm trying to solve the above problems using different existing toolkit, this introduce another issues... And I think that we need manual checking ... 
+	 \end{frame}
+%============================================================%
+%
+%============================================================%
+\subsection{NEB Corpus }
+\begin{frame}{Gaëlle Vidal Work to Complete!!}
+\begin{figure}
+	\includegraphics[scale=0.4]{/home/asini/Workspace/TexTemplates/asImages/neb_corpus_gael.png}
 
-\begin{frame}{Key Problems In Text Processing}
+\end{figure}
 
-\begin{itemize}
-\item Neuro-Endotrainer tracking and evaluation
-\item Neuro-endoscopy tool tracking(Aux camera and Endoscopy camera)
-\item  Micro-suturing skills assessment - effectiveness(images) and Dexterity(video - activity detection and scoring)
-\item Drilling Skill assessment effectiveness(images) and Dexterity(video - activity detection)
-\end{itemize}
-% Commands to include a figure:
-%\begin{figure}
-%\includegraphics[width=\textwidth]{your-figure's-file-name}
-%\caption{\label{fig:your-figure}Caption goes here.}
-%\end{figure}
+\end{frame}
+%============================================================%
+%
+%============================================================%
+\section{Prosody}
+\subsection{Prosody Modeling}
+\begin{frame}{Some Related Work}
+	
+\end{frame}
+
+\subsection{Prosody Prediction}
+\begin{frame}{Some Related Work}
+	
+\end{frame}
+%============================================================%
+%
+%============================================================%
+
+\subsection{Raised Questions?}
+\begin{frame}{Questions?}
 
 \end{frame}
 
-\begin{frame}{Key Problems In Speech Processing}
-\end{frame}
-
-\section{Related Word}
-\subsection{Related Work - I}
-\begin{frame}{Related Work and Literature review - I}
-\Large The main focus so far has been only the Neuro-endotrainer
-\begin{itemize}
-\item It started with building background on Image Processing and Computer Vision:
-\begin{itemize}
-\item \large Notes on DIA - Basics of image representation, filtering operations, Image Warping
-\item \large Mooc on Udacity - Math behind Canny Edge detection and Hough Transform
-\item \large Another Mooc on CV - just specific topics from that made me comfortable with the math. - eg: SIFT descriptor etc
-\item \large Notes on CV that led me to study the math behind
-projective geometry - mainly Hartley and Zisserman
-\item \large Getting used to coding in openCV
-\end{itemize}
-\end{itemize}
-\end{frame}
-
-\subsection{Related Work - II}
-\subsection{Geared Towards Prosody Characterization}
-
+\section{Summary}
 \subsection{Future scope of work}
-
 \begin{frame}{Suggested problems to work on}
-\Large Currently the following problems are to be addressed
-\begin{itemize}
-\item Endotrainer related:
-\begin{itemize}
-\item \Large Identify tugging of the ring onto a peg.
-\item \Large  Endoscopic Camera Evaluation - The tool is to be tracked and determined whether the tool is in the centre of the field or exiting the field and evaluate if it hits the peg.
-\end{itemize}
 
-\item Micro-suturing related (Image and Video)
-\item Drill related (Image and Video)
-\end{itemize}
 \end{frame}
+\subsection{Work Plan}
+\begin{frame}{\textbf{Planning the unplannable?}}
+\url{https://www.officetimeline.com/gantt-chart-template/gantt-download}
+
+\end{frame}
+
 \begin{frame}
 \centering \LARGE THANKYOU
 \end{frame}
@@ -154,30 +153,6 @@ projective geometry - mainly Hartley and Zisserman
   \item Silverstein, K. A. T.; Haymet, A. J. D.; Dill, K. A. Molecular Model of Hydrophobic Solvation J. Chem. Phys. \textbf{1999}, 111(17), 8000-8009 
 \end{itemize}
 \end{frame}
-
-
-
-\section{Summary}
-
-\subsection{Raised Questions?}
-\begin{frame}{Questions?}
-\begin{itemize}
-  \item Study MB water to understand peculiar properties it possesses.
-  \item Running various simulations to test MB water and Monte Carlo/Molecular Dynamics simulation methods.
-  \item Testing results from previously published journals.
-  \item Research can be used as a teaching resource and source of information for scientific community.
-\end{itemize}
-\end{frame}
-
-\subsection{Work Plan}
-\begin{frame}{Schedule For Next 6 Months?}
-\center{\textbf{Planning the unplannable?}}
-
-
-\url{https://www.officetimeline.com/gantt-chart-template/gantt-download}
-
-\end{frame}
-
 
 
 \end{document}
