@@ -11,5 +11,5 @@
 \beamer@subsectionintoc {2}{3}{Raised Questions?}{8}{0}{2}
 \beamer@sectionintoc {3}{Summary}{9}{0}{3}
 \beamer@subsectionintoc {3}{1}{Future scope of work}{9}{0}{3}
-\beamer@subsectionintoc {3}{2}{Work Plan}{10}{0}{3}
+\beamer@subsectionintoc {3}{2}{Work Plan(Schudele)}{10}{0}{3}
 \beamer@subsectionintoc {3}{3}{References}{12}{0}{3}
